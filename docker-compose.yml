@@ -1,0 +1,51 @@
+# docker-compose.yml
+version: "3.9"
+
+services:
+
+  # ── MySQL Database ─────────────────────────────────────────────
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - drupal_net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 5
+
+  # ── Drupal Application ─────────────────────────────────────────
+  drupal:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    ports:
+      - "8080:80"
+    volumes:
+      - drupal_files:/var/www/html/web/sites/default/files
+      - drupal_modules:/var/www/html/web/modules/contrib
+      - drupal_themes:/var/www/html/web/themes/contrib
+    networks:
+      - drupal_net
+
+volumes:
+  db_data:
+  drupal_files:
+  drupal_modules:
+  drupal_themes:
+
+networks:
+  drupal_net:

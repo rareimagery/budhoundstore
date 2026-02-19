@@ -1,0 +1,19 @@
+# Environment and secrets
+.env
+
+# Drupal (when using Composer from host)
+drupal/vendor/
+drupal/web/core/
+drupal/web/libraries/
+
+# Temporary build/migration scripts (executed via drush php-script)
+build-*.php
+configure-*.php
+fix-*.php
+verify-*.php
+debug-*.php
+test-*.php
+list-*.php
+rebuild-*.php
+check-*.php
+setup-*.php
