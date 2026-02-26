@@ -1,0 +1,26 @@
+commerce_react_checkout.pay:
+  path: '/api/checkout/{order_id}/pay'
+  defaults:
+    _controller: '\Drupal\commerce_react_checkout\Controller\CheckoutController::pay'
+    _format: 'json'
+  requirements:
+    _permission: 'access checkout'
+  methods: [POST, OPTIONS]
+
+commerce_react_checkout.pay_confirm:
+  path: '/api/checkout/{order_id}/pay/confirm'
+  defaults:
+    _controller: '\Drupal\commerce_react_checkout\Controller\CheckoutController::confirm'
+    _format: 'json'
+  requirements:
+    _permission: 'access checkout'
+  methods: [POST, OPTIONS]
+
+commerce_react_checkout.complete:
+  path: '/api/checkout/{order_id}/complete'
+  defaults:
+    _controller: '\Drupal\commerce_react_checkout\Controller\CheckoutController::complete'
+    _format: 'json'
+  requirements:
+    _permission: 'access checkout'
+  methods: [POST, OPTIONS]

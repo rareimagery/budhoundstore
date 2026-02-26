@@ -1,0 +1,12 @@
+name: 'BudHound API'
+type: module
+description: 'Custom REST API endpoints for BudHound store management (dashboard, inventory, orders, reports, staff).'
+core_version_requirement: ^10 || ^11
+package: BudHound
+dependencies:
+  - drupal:user
+  - commerce:commerce_order
+  - commerce:commerce_product
+  - commerce:commerce_store
+  - budhound_permissions:budhound_permissions
+  - budhound_store_access:budhound_store_access

@@ -1,0 +1,8 @@
+name: 'BudStore Defaults'
+type: module
+description: 'Site-wide defaults for BudStore — auto-assigns all stores to new products.'
+core_version_requirement: ^10 || ^11
+package: BudStore
+dependencies:
+  - commerce:commerce_product
+  - commerce:commerce_store

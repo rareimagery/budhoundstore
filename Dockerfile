@@ -25,9 +25,14 @@ RUN curl -fsSL https://github.com/drush-ops/drush-launcher/releases/latest/downl
     -o /usr/local/bin/drush \
     && chmod +x /usr/local/bin/drush
 
-# Point Apache DocumentRoot to Composer project's web/ directory
-RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/web|g' \
-    /etc/apache2/sites-available/000-default.conf
+# Allow .htaccess overrides for Drupal (AllowOverride None blocks Drupal routing)
+RUN sed -i 's|AllowOverride None|AllowOverride All|g' /etc/apache2/apache2.conf
+
+# Multisite: virtual hosts for budhound.app and rareimagery.net
+COPY apache/budhound.app.conf    /etc/apache2/sites-available/budhound.app.conf
+COPY apache/rareimagery.net.conf /etc/apache2/sites-available/rareimagery.net.conf
+RUN a2ensite budhound.app.conf rareimagery.net.conf \
+    && a2enmod rewrite
 
 # Set working directory
 WORKDIR /var/www/html

@@ -1,0 +1,7 @@
+name: 'Commerce Barcode Scanner'
+type: module
+description: 'Adds a 📷 Scan Barcode button to Commerce product add/edit forms so staff can scan product barcodes or QR codes to fill the SKU field.'
+core_version_requirement: ^9 || ^10 || ^11
+package: Commerce
+dependencies:
+  - commerce:commerce_product

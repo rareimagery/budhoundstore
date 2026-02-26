@@ -1,0 +1,4 @@
+services:
+  budhound_api.repositories.user:
+    class: Drupal\budhound_api\Repositories\UserRepository
+    arguments: ['@password']

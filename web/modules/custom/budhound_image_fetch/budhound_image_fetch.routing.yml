@@ -1,0 +1,23 @@
+budhound_image_fetch.settings_form:
+  path: '/admin/config/budhound/image-fetch'
+  defaults:
+    _form: '\Drupal\budhound_image_fetch\Form\ImageFetchSettingsForm'
+    _title: 'BudHound Image Fetch Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+budhound_image_fetch.search:
+  path: '/api/budhound/image-search'
+  defaults:
+    _controller: '\Drupal\budhound_image_fetch\Controller\ImageSearchController::search'
+  requirements:
+    _permission: 'administer commerce_product'
+  methods: [GET]
+
+budhound_image_fetch.download:
+  path: '/api/budhound/image-download'
+  defaults:
+    _controller: '\Drupal\budhound_image_fetch\Controller\ImageSearchController::download'
+  requirements:
+    _permission: 'administer commerce_product'
+  methods: [POST]

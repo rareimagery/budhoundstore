@@ -1,0 +1,9 @@
+name: 'BudHound Store Access'
+type: module
+description: 'Store-scoped data isolation for BudHound management. Auto-injects store filters into JSON:API.'
+core_version_requirement: ^10 || ^11
+package: BudHound
+dependencies:
+  - drupal:user
+  - drupal:jsonapi
+  - commerce:commerce_store

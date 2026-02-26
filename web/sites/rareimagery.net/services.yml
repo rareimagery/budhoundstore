@@ -1,0 +1,23 @@
+parameters:
+  cors.config:
+    enabled: true
+    allowedHeaders:
+      - Content-Type
+      - Accept
+      - Authorization
+      - Commerce-Cart-Token
+      - Commerce-Current-Store
+      - X-CSRF-Token
+    allowedMethods:
+      - GET
+      - POST
+      - PATCH
+      - DELETE
+      - OPTIONS
+    allowedOrigins:
+      - http://localhost:3001
+      - '*'
+    exposedHeaders:
+      - Commerce-Cart-Token
+    maxAge: 3600
+    supportsCredentials: true

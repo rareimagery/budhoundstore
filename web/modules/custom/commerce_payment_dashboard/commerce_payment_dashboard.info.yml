@@ -1,0 +1,8 @@
+name: 'Commerce Payment Dashboard'
+type: module
+description: 'Unified admin dashboard for all payment gateways.'
+core_version_requirement: ^10 || ^11
+package: Commerce
+dependencies:
+  - commerce:commerce_payment
+  - commerce:commerce_order

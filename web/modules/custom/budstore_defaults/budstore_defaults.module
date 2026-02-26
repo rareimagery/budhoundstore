@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * @file
+ * BudStore Defaults — site-wide behavioural overrides.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\commerce_product\Entity\ProductInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for commerce_product.
+ *
+ * When a NEW product is saved for the first time and has no stores selected,
+ * automatically assigns it to every store in the system.
+ *
+ * Existing products are not touched, so store managers can still restrict
+ * a product to specific stores by manually deselecting stores on the form.
+ */
+function budstore_defaults_commerce_product_presave(ProductInterface $product) {
+  // Only act on new products that have no stores yet.
+  if (!$product->isNew()) {
+    return;
+  }
+
+  $current_store_ids = $product->getStoreIds();
+  if (!empty($current_store_ids)) {
+    return;
+  }
+
+  // Load all stores and assign them all.
+  $store_ids = \Drupal::entityTypeManager()
+    ->getStorage('commerce_store')
+    ->getQuery()
+    ->accessCheck(FALSE)
+    ->execute();
+
+  if (empty($store_ids)) {
+    return;
+  }
+
+  $store_refs = array_map(fn($id) => ['target_id' => $id], array_values($store_ids));
+  $product->set('stores', $store_refs);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for commerce_product forms.
+ *
+ * Pre-selects all stores in the product add/edit form so managers see the
+ * full list pre-ticked (they can uncheck individual stores if needed).
+ */
+function budstore_defaults_form_commerce_product_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\commerce_product\Entity\ProductInterface $product */
+  $product = $form_state->getFormObject()->getEntity();
+
+  // Only modify the form for new products.
+  if (!$product->isNew()) {
+    return;
+  }
+
+  // Pre-select all stores in the widget.
+  if (isset($form['stores'])) {
+    $store_ids = \Drupal::entityTypeManager()
+      ->getStorage('commerce_store')
+      ->getQuery()
+      ->accessCheck(FALSE)
+      ->execute();
+
+    // The stores widget uses entity_reference_autocomplete or checkboxes.
+    // For checkboxes (typical for small number of stores):
+    if (isset($form['stores']['widget']['#default_value'])) {
+      $form['stores']['widget']['#default_value'] = array_values($store_ids);
+    }
+  }
+}

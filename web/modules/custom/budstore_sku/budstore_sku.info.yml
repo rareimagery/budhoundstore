@@ -1,0 +1,7 @@
+name: 'BudStore SKU Auto-Generator'
+type: module
+description: 'Automatically generates SKUs in the format STORE-TYPE-#### when a variation is saved with a blank SKU field.'
+core_version_requirement: ^10 || ^11
+package: BudStore
+dependencies:
+  - commerce:commerce_product

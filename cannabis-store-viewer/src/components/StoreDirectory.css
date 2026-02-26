@@ -1,0 +1,76 @@
+/* ── Hero stats strip ──────────────────────────────────────────────────────── */
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-num {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+.hero-stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+
+/* ── Enhanced store card ───────────────────────────────────────────────────── */
+.scard-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #3E2723;
+  margin: 0 0 8px;
+}
+
+.scard-address {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #8D6E63;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.scard-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #E8DFD3;
+}
+
+.scard-maps-link {
+  font-size: 0.8rem;
+  color: #8D6E63;
+  text-decoration: none;
+}
+
+.scard-maps-link:hover {
+  color: #6D4C41;
+  text-decoration: underline;
+}
+
+.scard-menu-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6D4C41;
+  text-decoration: none;
+}
+
+.scard-menu-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,10 @@
+name: 'BudHound Permissions'
+type: module
+description: 'Granular role-based permissions for BudHound store management.'
+core_version_requirement: ^10 || ^11
+package: BudHound
+dependencies:
+  - drupal:user
+  - commerce:commerce_order
+  - commerce:commerce_product
+  - commerce:commerce_store

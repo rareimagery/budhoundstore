@@ -1,0 +1,146 @@
+<?php
+
+/**
+ * @file
+ * BudHound Image Fetch module.
+ *
+ * Auto-fetches product images via Google Custom Search API when products
+ * are saved without an image.
+ */
+
+use Drupal\commerce_product\Entity\ProductInterface;
+
+/**
+ * Implements hook_entity_presave() for commerce_product.
+ */
+function budhound_image_fetch_commerce_product_presave(ProductInterface $product) {
+  $config = \Drupal::config('budhound_image_fetch.settings');
+
+  // Only run in auto-attach mode.
+  if (!$config->get('auto_attach')) {
+    return;
+  }
+
+  // Check if product already has an image.
+  if (!$product->hasField('field_product_image') || !$product->get('field_product_image')->isEmpty()) {
+    return;
+  }
+
+  // Build search query from product fields.
+  $query = _budhound_image_fetch_build_query($product);
+
+  if (empty($query)) {
+    return;
+  }
+
+  /** @var \Drupal\budhound_image_fetch\Service\GoogleImageSearch $search */
+  $search = \Drupal::service('budhound_image_fetch.google_image_search');
+  $results = $search->search($query, 1);
+
+  if (!empty($results[0]['link'])) {
+    $filename = _budhound_image_fetch_build_filename($product);
+    $file = $search->downloadAndCreateFile($results[0]['link'], $filename);
+
+    if ($file) {
+      $product->set('field_product_image', [
+        'target_id' => $file->id(),
+        'alt' => $product->getTitle(),
+      ]);
+      \Drupal::logger('budhound_image_fetch')
+        ->info('Auto-attached image for product @title (query: @query)', [
+          '@title' => $product->getTitle(),
+          '@query' => $query,
+        ]);
+    }
+  }
+  elseif ($config->get('fallback_enabled') && $config->get('fallback_image_uuid')) {
+    // Attach fallback/placeholder image.
+    $fallback = \Drupal::service('entity.repository')
+      ->loadEntityByUuid('file', $config->get('fallback_image_uuid'));
+    if ($fallback) {
+      $product->set('field_product_image', [
+        'target_id' => $fallback->id(),
+        'alt' => $product->getTitle() . ' (placeholder)',
+      ]);
+    }
+  }
+}
+
+/**
+ * Build a search query from product fields.
+ */
+function _budhound_image_fetch_build_query(ProductInterface $product): string {
+  $parts = [];
+
+  // Fields to check, with whether to wrap in quotes for exact matching.
+  $field_map = [
+    'field_strain_name' => TRUE,
+    'field_product_form' => FALSE,
+  ];
+
+  foreach ($field_map as $field => $quote) {
+    if ($product->hasField($field) && !$product->get($field)->isEmpty()) {
+      $value = $product->get($field)->value;
+      if (!empty($value)) {
+        $parts[] = $quote ? '"' . $value . '"' : strtolower($value);
+      }
+    }
+  }
+
+  // Use product bundle label as product type.
+  $bundle = $product->bundle();
+  $bundle_label = $bundle;
+
+  // Map bundle machine names to search-friendly labels.
+  $bundle_map = [
+    'flower' => 'flower',
+    'concentrate' => 'concentrate',
+    'edible' => 'edible',
+    'vape_cartridge' => 'vape cartridge',
+    'pre_roll' => 'pre-roll joint',
+    'tincture' => 'tincture',
+    'topical' => 'topical',
+    'cannabis_clone_seed' => 'seeds',
+    'default' => 'product',
+  ];
+
+  if (isset($bundle_map[$bundle])) {
+    $bundle_label = $bundle_map[$bundle];
+  }
+  $parts[] = strtolower($bundle_label);
+
+  // Check for brand field.
+  foreach (['field_brand', 'attribute_brand'] as $brand_field) {
+    if ($product->hasField($brand_field) && !$product->get($brand_field)->isEmpty()) {
+      $brand_value = $product->get($brand_field)->entity
+        ? $product->get($brand_field)->entity->label()
+        : $product->get($brand_field)->value;
+      if (!empty($brand_value)) {
+        $parts[] = $brand_value;
+        break;
+      }
+    }
+  }
+
+  // Always append cannabis to filter results.
+  $parts[] = 'cannabis';
+
+  return implode(' ', $parts);
+}
+
+/**
+ * Build a sanitized filename from product fields.
+ */
+function _budhound_image_fetch_build_filename(ProductInterface $product): string {
+  $parts = [];
+
+  if ($product->hasField('field_strain_name') && !$product->get('field_strain_name')->isEmpty()) {
+    $parts[] = $product->get('field_strain_name')->value;
+  }
+
+  $parts[] = $product->bundle();
+
+  $name = !empty($parts) ? implode('-', $parts) : 'product-image';
+
+  return preg_replace('/[^a-z0-9\-]/', '-', strtolower($name));
+}

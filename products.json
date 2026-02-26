@@ -1,0 +1,1994 @@
+[
+    {
+        "product_id": 1,
+        "uuid": "0da3c787-3837-4554-93aa-13be280ee482",
+        "title": "Connected Cannabis — Biscotti",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 2,
+        "uuid": "5e1d9e6e-9351-4951-b6a1-521f364cf3a7",
+        "title": "Connected Cannabis — Runtz",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 3,
+        "uuid": "d9265eb9-45bc-4cfa-9727-9250e1947884",
+        "title": "Connected Cannabis — Gushers",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 4,
+        "uuid": "9aa74508-eeac-409d-9681-67d221e3f764",
+        "title": "Connected Cannabis — Slurty #3",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 5,
+        "uuid": "428cf179-c9ae-496b-81df-5ae80bd8afce",
+        "title": "Alien Labs — Area 41",
+        "brand": "Alien Labs",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 6,
+        "uuid": "f9fdfcff-e819-47dc-9145-2206b9062e1e",
+        "title": "Alien Labs — Galactic Runtz",
+        "brand": "Alien Labs",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 7,
+        "uuid": "62b9de95-7064-4521-847e-4aae51cf15e1",
+        "title": "Alien Labs — Baklava",
+        "brand": "Alien Labs",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 8,
+        "uuid": "b50c9b25-17df-48f0-ab92-7fdad37c3c67",
+        "title": "Alien Labs — Zkittlez",
+        "brand": "Alien Labs",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 9,
+        "uuid": "7ef45dd8-8577-4fc0-b615-eab3da71f303",
+        "title": "Glasshouse Farms — Lemon OG",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 10,
+        "uuid": "5454004a-e2a6-4c8d-ac21-2af0b254bb9b",
+        "title": "Glasshouse Farms — Papaya",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 11,
+        "uuid": "4c77b9cd-6b20-4584-9d05-d7562f2a2124",
+        "title": "Mr. Zips — Sunshine Punch",
+        "brand": "Mr. Zips",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 12,
+        "uuid": "9eb04142-de1e-47eb-af24-1b21664de91b",
+        "title": "Floracal — Zkittlez",
+        "brand": "Floracal",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 13,
+        "uuid": "32e96471-948c-436c-8b38-a6be48cfbc8a",
+        "title": "Floracal — Granddaddy Purple",
+        "brand": "Floracal",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 14,
+        "uuid": "6102a94c-537b-4b51-b13f-f1e59980f6d5",
+        "title": "Top Shelf — OG Kush",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 15,
+        "uuid": "3b5fec3d-f20c-42be-b702-cac4b53c65ea",
+        "title": "Top Shelf — Blue Dream",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 16,
+        "uuid": "6b1bc88f-b508-475b-b933-c968eecbb821",
+        "title": "Top Shelf — White Widow",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 72,
+        "uuid": "fa24e52c-2384-4cc0-ae31-1b72e46b7813",
+        "title": "Biscotti",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 73,
+        "uuid": "de559141-5217-459c-9839-5b61324e878c",
+        "title": "Gushers",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 74,
+        "uuid": "2512d914-b4a8-40af-b51f-cabef944314b",
+        "title": "Galactic Runtz",
+        "brand": "Alien Labs",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 75,
+        "uuid": "b4b4a89b-81aa-4845-ab7e-cf10e99422ab",
+        "title": "Frosted Flyers",
+        "brand": "Claybourne Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 76,
+        "uuid": "9bd27eca-cc04-4a89-9e7a-0d8d427225d1",
+        "title": "Sin Mint Cookies",
+        "brand": "Pearl Pharma",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 77,
+        "uuid": "1fce7ed0-2fd5-4ce3-844a-ee4e7a262e16",
+        "title": "Lemon OG",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 78,
+        "uuid": "17779bab-05cc-440e-a818-9baf3828395b",
+        "title": "OG Kush",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 79,
+        "uuid": "6d9a9313-3699-4144-a688-c7eb423e6915",
+        "title": "OG Kush (Oz)",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 101,
+        "uuid": "cfe7a0cc-10ae-47c7-b152-8820cb51e756",
+        "title": "Biscotti",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 102,
+        "uuid": "df42b7ec-10e1-44c5-87a6-f552d948462d",
+        "title": "Zkittlez",
+        "brand": "Alien Labs",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 103,
+        "uuid": "9b29c77a-f253-4bce-b0c2-2e38031e20dc",
+        "title": "Granddaddy Purple",
+        "brand": "Floracal",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 104,
+        "uuid": "d1465958-451a-49c9-bf5d-a9e832cafcca",
+        "title": "Papaya",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 105,
+        "uuid": "38e02fbc-2a73-4e57-a86b-2a5382687ba9",
+        "title": "White Widow",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 106,
+        "uuid": "09f616cb-c1e6-46a6-8832-c1dc38b73fec",
+        "title": "White Widow (Oz)",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 130,
+        "uuid": "7660dcaa-d5a7-47ad-a9ca-6875bba44082",
+        "title": "Area 41",
+        "brand": "Alien Labs",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 131,
+        "uuid": "28233536-6e51-490d-9c20-282faa2a43c9",
+        "title": "Slurty #3",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 132,
+        "uuid": "dd68a70b-1fe8-4d42-855d-a80793f63ebd",
+        "title": "Legacy Smalls — Various",
+        "brand": "RMR Legacy Smalls",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 133,
+        "uuid": "6ace3c63-95db-4f88-b4e8-c0df11039767",
+        "title": "Zkittlez",
+        "brand": "Floracal",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 134,
+        "uuid": "962df7b6-8050-45a2-a1cb-0d6176258a68",
+        "title": "Lemon OG",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 135,
+        "uuid": "4e3a7345-b94e-4be4-9616-0e204f156660",
+        "title": "Papaya (Oz)",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 136,
+        "uuid": "bb6353d7-1f0c-45ab-8ff2-a54cab393128",
+        "title": "Blue Dream",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 137,
+        "uuid": "d681a64f-5d8c-490f-a91f-de8718c40c58",
+        "title": "Blue Dream (Oz)",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 138,
+        "uuid": "677d5983-0856-4d19-9a45-bda033ff65c8",
+        "title": "Presidential OG",
+        "brand": "Presidential",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 161,
+        "uuid": "71a3767c-ee67-466b-b742-0e4e363eff2d",
+        "title": "Biscotti",
+        "brand": "Connected Cannabis Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 162,
+        "uuid": "43f5979e-965f-4968-8090-52ffc00619a2",
+        "title": "Galactic Runtz",
+        "brand": "Alien Labs",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 163,
+        "uuid": "2c955c4c-d68e-4034-b1d7-b301180a9ce2",
+        "title": "Live Rosin — Wedding Cake",
+        "brand": "Coldfire Extracts",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 164,
+        "uuid": "daf98c00-fa40-40bc-9432-f558346fddab",
+        "title": "Zkittlez",
+        "brand": "Floracal",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 165,
+        "uuid": "90244c8d-3fec-4713-8fac-f784e41d3785",
+        "title": "Lemon OG",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 166,
+        "uuid": "da439bb8-a2ee-404d-b90d-f9ac228c94c8",
+        "title": "Papaya (7g)",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 167,
+        "uuid": "43340a86-caeb-4d09-b20e-9ce1f022637a",
+        "title": "OG Kush (Oz)",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 168,
+        "uuid": "afa3bb93-c5b1-4129-a266-125101c7814a",
+        "title": "Presidential OG",
+        "brand": "Presidential",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 196,
+        "uuid": "6a772307-d781-4c95-90e4-3392ddbddc70",
+        "title": "Wedding Cake",
+        "brand": "420 Proper",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 197,
+        "uuid": "107beafc-e357-4cf3-840a-8854d2e30924",
+        "title": "Wedding Cake (Oz)",
+        "brand": "420 Proper",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 198,
+        "uuid": "20f93e66-c553-44ba-8b2b-055007ea8510",
+        "title": "Weeding Cake (Oz)",
+        "brand": "Weeding Cake",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 199,
+        "uuid": "79b0acf0-3ccb-4581-aab9-379c76ace08a",
+        "title": "Sunshine Punch (Oz)",
+        "brand": "Juicy Z",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 200,
+        "uuid": "8209289f-518f-45f2-a0e4-74da9ea1dddc",
+        "title": "OG Kush",
+        "brand": "Cannabiotix",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 201,
+        "uuid": "76269298-4371-4c72-9c63-41511b8b8fc8",
+        "title": "Lemon OG",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 202,
+        "uuid": "7e3d27c2-34f9-4c3d-ae59-d99b1d33efd6",
+        "title": "White Widow (Oz)",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 218,
+        "uuid": "f3c1bc11-efdd-444a-8727-5049f188945b",
+        "title": "Wappa (Exclusive)",
+        "brand": "420 Kingdom",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 219,
+        "uuid": "f1ee5f2e-73f4-4c57-b580-e50ebbf869c4",
+        "title": "Citrus Tsunami",
+        "brand": "Hydrotic Flower",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 220,
+        "uuid": "b9f2c90c-33d3-4769-aa96-32e4146e4ed6",
+        "title": "Gelato #33",
+        "brand": "Claybourne Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 221,
+        "uuid": "76a88a2b-48c2-4fc4-8a6a-f5294a09e3d4",
+        "title": "Frosted Flyers",
+        "brand": "Claybourne Co.",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 222,
+        "uuid": "598aad45-7dc2-4134-90bf-d065192f3ebb",
+        "title": "Gelato #33",
+        "brand": "State Flower",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 223,
+        "uuid": "07924f85-c9f7-4aa2-bc70-7c3e98738946",
+        "title": "Lemon OG",
+        "brand": "Glasshouse Farms",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 224,
+        "uuid": "1b7fc33e-c776-448a-bb37-88b441a7a625",
+        "title": "White Widow",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 225,
+        "uuid": "dc3b09e2-49dc-430e-b6ce-28213d315ea4",
+        "title": "White Widow (Oz)",
+        "brand": "Top Shelf Cultivation",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 226,
+        "uuid": "6cb1ab23-ef71-4e05-b03a-1892dccffe91",
+        "title": "Wappa Ounce (Exclusive)",
+        "brand": "420 Kingdom",
+        "type": "flower",
+        "has_description": false
+    },
+    {
+        "product_id": 17,
+        "uuid": "83740dd1-3bc8-419c-87fb-b47ac051bdaf",
+        "title": "Jeeter — Baby Jeeter Blueberry",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 18,
+        "uuid": "fdf4d9df-09ee-46e3-8960-7eb74a76232b",
+        "title": "Jeeter — Baby Jeeter Watermelon",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 19,
+        "uuid": "318b0a5f-c640-47ff-9881-a98aceb85427",
+        "title": "Jeeter — Jeeter Juice Live Resin",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 20,
+        "uuid": "dbe7917d-e15d-492b-a3cb-3161e8b39c70",
+        "title": "Jeeter — Infused Pre-Roll",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 21,
+        "uuid": "07e45986-845c-4a33-afcb-c5c7c8662f8f",
+        "title": "Heavy Hitters — Diamond Pre-Roll",
+        "brand": "Heavy Hitters",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 22,
+        "uuid": "7fed6736-ecef-4dd9-9d1b-5657f1327481",
+        "title": "Space Coyote — Infused Joint",
+        "brand": "Space Coyote",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 23,
+        "uuid": "e5c90e88-04e7-4bde-85c2-b0840e5b436a",
+        "title": "Lowell Smokes — Sativa",
+        "brand": "Lowell Herb Co.",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 24,
+        "uuid": "92e3860c-2cd9-4a98-8542-300e5fc9fae4",
+        "title": "Lowell Smokes — Indica",
+        "brand": "Lowell Herb Co.",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 25,
+        "uuid": "59cef8e4-ff97-4f89-bb68-e173631c9262",
+        "title": "Lowell Smokes — Hybrid",
+        "brand": "Lowell Herb Co.",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 26,
+        "uuid": "6cfbcad4-e1b1-42d7-a55e-d152c2e1ce20",
+        "title": "Sluggers — Slugger Hit",
+        "brand": "Sluggers",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 80,
+        "uuid": "7bc6cb82-642a-4efe-a8d3-472d8560793e",
+        "title": "Baby Jeeter 5-Pack — Watermelon",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 81,
+        "uuid": "2f1f277f-f706-44e7-9e60-d8d74f52c65e",
+        "title": "Jeeter Juice Live Resin — Banana Gelato",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 82,
+        "uuid": "214bd708-3ae0-4356-adb3-8ae5cf960c8d",
+        "title": "Slugger Hit — Guava Drop",
+        "brand": "Sluggers",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 83,
+        "uuid": "0e7497e9-c1d4-433a-abb0-d7427b8d6a30",
+        "title": "Infused Rosin — Indica",
+        "brand": "Space Coyote",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 84,
+        "uuid": "4b9c47f4-a43b-460a-9cb3-3fc758b73982",
+        "title": "Diamond Pre-Roll 2-Pack",
+        "brand": "Heavy Hitters",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 107,
+        "uuid": "52810cbc-8792-4c2c-a84a-e13c400190b0",
+        "title": "Baby Jeeter 5-Pack — Gelato",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 108,
+        "uuid": "7ac7b51c-5c9f-4411-851d-9bfc36892015",
+        "title": "Jeeter Juice — Strawberry Sour Patch",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 109,
+        "uuid": "38a1b1af-bdbe-485a-987d-f38af71631b8",
+        "title": "Lowell Smokes 7-Pack — Sativa",
+        "brand": "Lowell Herb Co.",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 110,
+        "uuid": "976f65c5-0619-4dc0-89e7-17ca2437c4a6",
+        "title": "Infused Rosin Pre-Roll — Sativa",
+        "brand": "Space Coyote",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 111,
+        "uuid": "22307876-595e-41b4-a898-eb6b26255d29",
+        "title": "Diamond Pre-Roll",
+        "brand": "Heavy Hitters",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 139,
+        "uuid": "b3a228e5-430e-42ca-a871-d719be90a4cf",
+        "title": "Baby Jeeter 5-Pack — Punch",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 140,
+        "uuid": "63d82467-b619-4c45-8a4c-89b4016a2eb4",
+        "title": "Jeeter Juice — Watermelon",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 141,
+        "uuid": "4fd59c4a-8695-461c-a9db-df15272f14f1",
+        "title": "Diamond Pre-Roll 2-Pack",
+        "brand": "Heavy Hitters",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 142,
+        "uuid": "df0ece2f-8d64-4327-8ca9-cb923849e291",
+        "title": "Infused Pre-Roll — Sativa",
+        "brand": "Presidential",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 169,
+        "uuid": "879c194f-6128-419e-81b8-c6f685adfaa1",
+        "title": "Baby Jeeter 5-Pack — Fuzzy Peach",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 170,
+        "uuid": "67840858-32b8-407c-a20d-5d1f0f559e16",
+        "title": "Jeeter Juice — Blue Tropic",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 171,
+        "uuid": "a90f7a1d-eba5-4b83-a60f-c62f739607cf",
+        "title": "Slugger Hit — Guava Drop",
+        "brand": "Sluggers",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 172,
+        "uuid": "d6d7bc9b-1d69-466c-b1f4-617a2ba1ee18",
+        "title": "Lowell Smokes 7-Pack — Indica",
+        "brand": "Lowell Herb Co.",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 173,
+        "uuid": "4cfbad08-fd39-4828-a9f9-f0d6949d8793",
+        "title": "Diamond Pre-Roll 2-Pack",
+        "brand": "Heavy Hitters",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 209,
+        "uuid": "95f96e63-c821-4856-89b8-02032a0b399c",
+        "title": "Baby Jeeter 5-Pack",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 210,
+        "uuid": "3005bd3d-8493-440c-ba73-7d3fda8579ba",
+        "title": "Jeeter Juice",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 230,
+        "uuid": "867a520c-ff78-4304-9bf8-785887773629",
+        "title": "Baby Jeeter 5-Pack — Lemon Drop",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 231,
+        "uuid": "ceff4121-2b52-40a1-b6aa-4540fdf27c8e",
+        "title": "Jeeter Juice — Butterscotch",
+        "brand": "Jeeter",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 232,
+        "uuid": "09999365-dafe-4e1c-b458-bd0d8d088b4d",
+        "title": "Sugar Babies Blunt 3-Pack",
+        "brand": "Sugar Babies",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 233,
+        "uuid": "1977c7b1-5617-4ab6-9cf3-675a994e4c82",
+        "title": "Sugar Babies Blunt Single",
+        "brand": "Sugar Babies",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 234,
+        "uuid": "7ecf95ea-4be9-40f6-bb4f-0cb4e0735594",
+        "title": "Korova Eighth",
+        "brand": "Korova",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 235,
+        "uuid": "1f0662bb-7a46-4462-8e36-1b36c78aad83",
+        "title": "Diamond Pre-Roll",
+        "brand": "Heavy Hitters",
+        "type": "pre_roll",
+        "has_description": false
+    },
+    {
+        "product_id": 47,
+        "uuid": "9855a69a-cc92-4e83-8efc-d4f2e0b5c171",
+        "title": "Kanha — Tropical Punch Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 48,
+        "uuid": "30f01b26-4ad9-4907-9ab9-0e458ca4a95b",
+        "title": "Kanha — Watermelon Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 49,
+        "uuid": "93ab59be-a644-4eaf-9780-99c278dc722c",
+        "title": "Kanha — Mango Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 50,
+        "uuid": "7d1bf16e-0b68-44b3-a891-f21705beb3de",
+        "title": "Kanha — Peach 1:1 CBD:THC",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 51,
+        "uuid": "bc7113b4-e875-4432-9a2e-158ad34cb5d8",
+        "title": "Kanha — Nano Fast-Acting",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 52,
+        "uuid": "73ebad3f-5dd4-4e8a-87e0-16c7478ae401",
+        "title": "Wyld — Huckleberry Indica",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 53,
+        "uuid": "f5471a10-15a0-4e4b-b3f8-32af0752f5cf",
+        "title": "Wyld — Peach Hybrid",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 54,
+        "uuid": "2e442d46-d735-4e3a-be93-4d95398cad85",
+        "title": "Wyld — Raspberry Sativa",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 55,
+        "uuid": "8e871f4d-b422-41ed-9420-f0db058c676f",
+        "title": "Dr. Norm's — Chocolate Chip Cookie",
+        "brand": "Dr. Norm's",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 56,
+        "uuid": "feaf7ad3-bdd6-4bf0-b39b-7ce88cf1d184",
+        "title": "Dr. Norm's — Rice Krispy Treat",
+        "brand": "Dr. Norm's",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 57,
+        "uuid": "b7d47981-5aef-4ace-9323-500a98f9aa48",
+        "title": "Field Trip — Hybrid Gummies",
+        "brand": "Field Trip",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 58,
+        "uuid": "3de6eca2-8a63-4405-94f2-0cc27dcc5eca",
+        "title": "Waferz — Chocolate Wafer",
+        "brand": "Waferz",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 59,
+        "uuid": "17027164-f6df-43c1-be3f-fdf40569307d",
+        "title": "HVY — Cannabis Margarita",
+        "brand": "HVY",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 60,
+        "uuid": "9ceb0351-1711-446a-a225-bc11edf52c6c",
+        "title": "HVY — Cannabis Moscow Mule",
+        "brand": "HVY",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 61,
+        "uuid": "9c743fcf-966c-43c4-8422-ee33cd21df32",
+        "title": "Puff Punch — Fruit Punch",
+        "brand": "Puff Punch",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 94,
+        "uuid": "0ef87cd0-6ace-426d-a87b-c92ea75488ed",
+        "title": "Tropical Punch Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 95,
+        "uuid": "741ad03b-c937-4dba-8b36-eb13a5153fcf",
+        "title": "Huckleberry Gummies (Indica)",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 96,
+        "uuid": "638a5be5-6ab2-48d3-bc12-eb6bee6a1687",
+        "title": "Dark Chocolate Bar",
+        "brand": "Kiva Confections",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 97,
+        "uuid": "008c5bb5-8b4b-4da6-b9c8-27e1191b4494",
+        "title": "Chocolate Chip Cookie",
+        "brand": "Dr. Norm's",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 122,
+        "uuid": "be014876-faec-467c-97a5-3d72701e9da0",
+        "title": "Mango Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 123,
+        "uuid": "b2e1333f-db72-4e22-86cc-e64934aed598",
+        "title": "Nano Fast-Acting Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 124,
+        "uuid": "0589590e-98ae-431d-b5b3-4f4c5b09fa6b",
+        "title": "Peach Gummies (Hybrid)",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 125,
+        "uuid": "f6884d52-279c-4fb8-8f85-d49ecaa72608",
+        "title": "Espresso Bites",
+        "brand": "Kiva Confections",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 126,
+        "uuid": "71e64526-c871-4610-aab5-c4b41e9fd539",
+        "title": "Rice Crispy Treat",
+        "brand": "Dr. Norm's",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 153,
+        "uuid": "f81c7b4f-e32f-44c4-bc94-5988fc67f84f",
+        "title": "Peach CBD:THC 1:1 Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 154,
+        "uuid": "9533a810-aa6c-4bb1-b266-b17cca10e682",
+        "title": "Huckleberry Gummies",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 155,
+        "uuid": "29c1c196-fd80-4fc8-8403-9fd22ebdfe21",
+        "title": "Pear CBD+CBG",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 156,
+        "uuid": "bc05911f-9182-485a-a86c-9dad8eac90a9",
+        "title": "Mint Chocolate Bar",
+        "brand": "Kiva Confections",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 185,
+        "uuid": "52ead0d0-a93f-4823-845b-4099dfb1b679",
+        "title": "Tropical Punch Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 186,
+        "uuid": "030a2f4c-de26-43d7-b7c2-50cacd93bd2a",
+        "title": "Nano Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 187,
+        "uuid": "3908e347-2720-4180-b2d4-fdf3e35fc90b",
+        "title": "Raspberry Gummies (Sativa)",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 188,
+        "uuid": "099acb6d-32d3-459d-abfc-4cc9b9ede15b",
+        "title": "Dark Chocolate Bar",
+        "brand": "Kiva Confections",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 189,
+        "uuid": "52a1da2f-1b0e-459f-b7a4-4b6e986cc596",
+        "title": "Chocolate Chip Cookie",
+        "brand": "Dr. Norm's",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 190,
+        "uuid": "88a82d5b-bc35-42c2-a689-d6b11760349c",
+        "title": "Cannabis Margarita",
+        "brand": "HVY Craft Cannabis",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 191,
+        "uuid": "cea9c7e6-cc61-40f9-bb37-93d0c882243a",
+        "title": "Moscow Mule",
+        "brand": "HVY Craft Cannabis",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 192,
+        "uuid": "5d1d9057-bb05-478a-9cf0-64792f59b9bc",
+        "title": "Seltzer — Mixed Berry",
+        "brand": "HVY Craft Cannabis",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 214,
+        "uuid": "ae2fc0a6-2b5a-442b-b534-e99db850a9c4",
+        "title": "Mango Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 215,
+        "uuid": "5a7349da-706e-4347-8cb0-28dab37ebf29",
+        "title": "Huckleberry Gummies",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 216,
+        "uuid": "d2b20c65-1f7e-489d-a79f-5ef129ba5e99",
+        "title": "Dark Chocolate Bar",
+        "brand": "Kiva Confections",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 217,
+        "uuid": "c3bd13d0-dd7e-43ac-b711-1c02b17f4229",
+        "title": "Chocolate Chip Cookie",
+        "brand": "Dr. Norm's",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 244,
+        "uuid": "0f7e81a8-33f9-4fa8-8836-ea8e10d5c775",
+        "title": "Tropical Punch Gummies",
+        "brand": "Kanha",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 245,
+        "uuid": "1cf0f529-af19-4102-a7b8-4f5aee7272fb",
+        "title": "Huckleberry Gummies",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 246,
+        "uuid": "07dc1fa7-757a-49e0-b034-662f76c20db2",
+        "title": "Peach Gummies",
+        "brand": "Wyld",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 247,
+        "uuid": "6c68fde9-0c13-4878-9f8b-96c002fd2ec9",
+        "title": "Chocolate Chip Cookie",
+        "brand": "Dr. Norm's",
+        "type": "edible",
+        "has_description": false
+    },
+    {
+        "product_id": 39,
+        "uuid": "d8d8eff5-52f6-4625-8cd5-4c8a06a7eaba",
+        "title": "Raw Garden — Live Badder",
+        "brand": "Raw Garden",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 40,
+        "uuid": "29b64a16-3b3c-4fa7-b61f-df8f2159e35e",
+        "title": "Raw Garden — Crumble",
+        "brand": "Raw Garden",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 41,
+        "uuid": "04fdfcb4-47a5-4600-8fd5-432eb4ebfb08",
+        "title": "Coldfire — Live Rosin",
+        "brand": "Coldfire Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 42,
+        "uuid": "c44c9350-2b7b-47b3-9356-dd876c52a81f",
+        "title": "Coldfire — Live Badder",
+        "brand": "Coldfire Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 43,
+        "uuid": "d762230d-43fb-4f93-96a7-df534c0aa639",
+        "title": "Emerald Bay — Shatter",
+        "brand": "Emerald Bay Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 44,
+        "uuid": "e8a1d514-14d9-49ea-9aa5-7b5e2bfb11b4",
+        "title": "Emerald Bay — Wax",
+        "brand": "Emerald Bay Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 45,
+        "uuid": "3239af1c-d145-4e8e-aa86-bb71f5d17d55",
+        "title": "Lime — Live Resin",
+        "brand": "Lime Cannabis",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 46,
+        "uuid": "78f08b44-4b7c-4368-8295-0a0a7772346d",
+        "title": "Lime — Live Rosin",
+        "brand": "Lime Cannabis",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 91,
+        "uuid": "0d0fc96c-0c53-4b09-9669-56b15a66a926",
+        "title": "Live Badder",
+        "brand": "Raw Garden",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 92,
+        "uuid": "8e91b07e-bba4-4006-9eef-ae3c54b6f64f",
+        "title": "Live Resin",
+        "brand": "Alien Labs",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 93,
+        "uuid": "ee4813de-8612-4b41-80cc-7a0425d91938",
+        "title": "Shatter",
+        "brand": "Emerald Bay Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 118,
+        "uuid": "5f0a1d5a-ddbb-4c70-ab8b-b8d9652e22c9",
+        "title": "Live Badder — Gelato",
+        "brand": "Punch Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 119,
+        "uuid": "fbfa8f02-b52c-4c8d-9079-f126df7fdca5",
+        "title": "Live Resin — Zkittlez Runtz",
+        "brand": "Punch Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 120,
+        "uuid": "2b03b4dc-f916-4894-a2c6-040941cd81ee",
+        "title": "Live Crumble — Papaya Punch",
+        "brand": "Raw Garden",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 121,
+        "uuid": "55ecd00b-3420-435c-b5bc-af74d879ff95",
+        "title": "Live Resin — Area 41",
+        "brand": "Alien Labs",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 149,
+        "uuid": "4afd4aca-ffc7-497e-8172-1770fd736cfd",
+        "title": "Live Rosin — GDP",
+        "brand": "Coldfire Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 150,
+        "uuid": "e8eb7ea8-1034-44eb-b0bf-ba59df7db797",
+        "title": "Live Badder — Papaya Punch",
+        "brand": "Raw Garden",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 151,
+        "uuid": "a28b9ac1-8531-473c-b205-ee28c3b498f8",
+        "title": "Live Resin — Gelato",
+        "brand": "Lime Cannabis",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 152,
+        "uuid": "67151f6b-2247-48a8-ba27-43e7e2c274d5",
+        "title": "Wax — OG Kush",
+        "brand": "Emerald Bay Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 180,
+        "uuid": "0944b992-6bfb-478b-949f-798e5caa9b5e",
+        "title": "Live Rosin — Gelato",
+        "brand": "Coldfire Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 181,
+        "uuid": "e8956f3f-e611-4e0e-a12e-9eb25d13a492",
+        "title": "Live Rosin — OG Kush",
+        "brand": "Bear Labs",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 182,
+        "uuid": "2b617763-f931-45ec-a660-bd2565a9605f",
+        "title": "Live Badder — Runtz",
+        "brand": "Raw Garden",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 183,
+        "uuid": "e6a8c7f0-eacf-444a-ade5-63b7ae257d64",
+        "title": "Live Rosin — Wedding Cake",
+        "brand": "Lime Cannabis",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 184,
+        "uuid": "6fb5c476-1dc2-428a-b45e-3a436b4a5971",
+        "title": "Shatter — OG Kush",
+        "brand": "Emerald Bay Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 211,
+        "uuid": "e967c3e6-6b3d-48c5-8699-a9e444fe5bbf",
+        "title": "Live Badder",
+        "brand": "Flavorade",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 212,
+        "uuid": "37415dd6-3621-4e50-b7f1-fcf0043c91c1",
+        "title": "Live Resin",
+        "brand": "Cannabiotix",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 213,
+        "uuid": "1bc1dde3-93ed-4323-b788-a00afa9af024",
+        "title": "Live Crumble",
+        "brand": "Raw Garden",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 241,
+        "uuid": "b1fe6e2e-2ff1-4065-a67d-3dbc5b67b068",
+        "title": "Live Rosin — Gelato",
+        "brand": "Coldfire Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 242,
+        "uuid": "019da193-4a4b-4241-97b2-f59787a3af8c",
+        "title": "Live Badder — OG Kush",
+        "brand": "Coldfire Extracts",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 243,
+        "uuid": "a5ed1fde-8dc8-4c94-801a-737fd0fae4df",
+        "title": "Live Badder — Papaya Punch",
+        "brand": "Raw Garden",
+        "type": "concentrate",
+        "has_description": false
+    },
+    {
+        "product_id": 27,
+        "uuid": "091ba2c3-fd7b-44ef-a0c2-8dd338b010c4",
+        "title": "Stiiizy CDT Pod — Indica 0.5g",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 28,
+        "uuid": "1c344370-a4aa-4575-abec-b06d4a3ca569",
+        "title": "Stiiizy CDT Pod — Sativa 0.5g",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 29,
+        "uuid": "cdadffff-a1be-401e-9177-e94a68a40a5b",
+        "title": "Stiiizy CDT Pod 1g — Indica",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 30,
+        "uuid": "b1bf01c8-874f-4671-8207-c941ad4a7b68",
+        "title": "Stiiizy CDT Pod 1g — Sativa",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 31,
+        "uuid": "ae62ec89-d525-4436-826b-8c5bb3fde0aa",
+        "title": "Stiiizy Live Resin Pod 0.5g",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 32,
+        "uuid": "cd974a85-e4aa-483d-a079-eb738e0bc7a8",
+        "title": "Stiiizy Live Resin Pod 1g",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 33,
+        "uuid": "ea1c2055-772c-4183-b8be-0230561fc876",
+        "title": "Raw Garden Refined LR 0.5g — Sativa",
+        "brand": "Raw Garden",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 34,
+        "uuid": "680f101a-e271-4992-acd1-2d9295bf8bc3",
+        "title": "Raw Garden Refined LR 1g — Hybrid",
+        "brand": "Raw Garden",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 35,
+        "uuid": "12438745-d44d-47a3-b208-5226af3dc2dd",
+        "title": "Heavy Hitters Ultra Potent 1g — Sativa",
+        "brand": "Heavy Hitters",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 36,
+        "uuid": "80beb900-cbc2-4ecf-8cb8-de36d506f07c",
+        "title": "Heavy Hitters Ultra Potent 1g — Indica",
+        "brand": "Heavy Hitters",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 37,
+        "uuid": "924ca320-b751-48bc-a2c7-7392bca2d63d",
+        "title": "Alien Labs 1g Cart",
+        "brand": "Alien Labs",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 38,
+        "uuid": "3a93071e-7a00-4bf4-9f6c-e7774749c894",
+        "title": "Connected Cannabis 1g Cart",
+        "brand": "Connected Cannabis Co.",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 85,
+        "uuid": "553ee00d-9a09-49af-8bac-4568b5d646d8",
+        "title": "CDT Pod — Pink Rozay",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 86,
+        "uuid": "ee89d2af-1491-4d3a-b46a-27a0b50df6cc",
+        "title": "CDT Pod — Blue Dream",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 87,
+        "uuid": "5838fd75-edad-4ae7-a3a4-e386abb36f01",
+        "title": "Live Resin Pod — Gelato",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 88,
+        "uuid": "dbb4a6fb-340e-4617-abfb-5d609d717d99",
+        "title": "Refined Live Resin — Papaya Punch",
+        "brand": "Raw Garden",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 89,
+        "uuid": "0e11e933-8701-416b-a190-92217d343f56",
+        "title": "Live Resin Cart — Biscotti",
+        "brand": "Connected Cannabis Co.",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 90,
+        "uuid": "5d1fb876-9111-4c17-b2f7-f571c73f6633",
+        "title": "Ultra Potent — Watermelon",
+        "brand": "Heavy Hitters",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 112,
+        "uuid": "26397dc2-8c4c-4318-b770-07671ab1546f",
+        "title": "CDT Pod — Gelato",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 113,
+        "uuid": "1b71aaff-e025-48c4-8358-67ad0a41f037",
+        "title": "Live Resin Pod — Sour Diesel",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 114,
+        "uuid": "6065d51e-3479-498c-b68f-60c9e40a68cf",
+        "title": "Papa's Select Cart — OG",
+        "brand": "Papa's Select",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 115,
+        "uuid": "1f9a5006-e939-4259-9314-10577d6c67e5",
+        "title": "Refined Live Resin — Papaya",
+        "brand": "Raw Garden",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 116,
+        "uuid": "c350d929-53be-4ff9-8c6c-f75190c7c685",
+        "title": "Ultra Potent — Watermelon",
+        "brand": "Heavy Hitters",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 117,
+        "uuid": "55363277-8ecf-4085-9fda-710cdbdaac98",
+        "title": "CDT Cart — Jack Herer",
+        "brand": "Buddies Brand",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 143,
+        "uuid": "1c708103-a549-4642-bebc-87a3a97a6308",
+        "title": "CDT Pod — Gelato 41",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 144,
+        "uuid": "b25d5dfe-25c2-4ea8-af84-44d7a8ef2287",
+        "title": "Live Resin Pod — OG Kush",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 145,
+        "uuid": "915cfd6d-d254-4e7b-bd33-70e4ff8ed9f0",
+        "title": "Refined Live Resin — Runtz",
+        "brand": "Raw Garden",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 146,
+        "uuid": "4e09e285-3b90-4336-b4a9-acd86b84e62c",
+        "title": "PLUGplay CDT — Granddaddy's Stash",
+        "brand": "PLUGplay",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 147,
+        "uuid": "30d09003-3db7-4a83-8356-643cbd86de44",
+        "title": "Ultra Potent — Chem Cookies",
+        "brand": "Heavy Hitters",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 148,
+        "uuid": "f21ebf89-fcc9-40e3-99ca-395ab464d816",
+        "title": "Live Resin Cart — Biscotti",
+        "brand": "Connected Cannabis Co.",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 174,
+        "uuid": "cf10f4c9-0061-41f1-aaa9-9a0d3e039e4e",
+        "title": "CDT Pod — Birthday Cake",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 175,
+        "uuid": "f5c2027a-c117-4dc6-ad3e-27cceef421fa",
+        "title": "Live Resin Pod — OG Kush",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 176,
+        "uuid": "87415e51-6455-40d9-8488-89aff08815a0",
+        "title": "Refined Live Resin — Gelato",
+        "brand": "Raw Garden",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 177,
+        "uuid": "1c26351c-0ebc-4ffb-a464-67573f3d70c2",
+        "title": "Ultra Potent — Grapefruit Mint",
+        "brand": "Heavy Hitters",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 178,
+        "uuid": "446b49e8-df4b-4ef1-8879-2f442516e8ed",
+        "title": "Live Resin Cart — Gushers",
+        "brand": "Connected Cannabis Co.",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 179,
+        "uuid": "5cb019d9-8ab1-49e4-b70c-57c2a51a70f1",
+        "title": "Live Resin — Zkittlez",
+        "brand": "Alien Labs",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 203,
+        "uuid": "e1fc5bb6-081f-4b8b-ba1f-79a485619714",
+        "title": "CDT Pod — Gelato (0.5g)",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 204,
+        "uuid": "2cf9f43a-0f68-4f6a-8170-03a26a6601fb",
+        "title": "CDT Pod — Gelato (1g)",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 205,
+        "uuid": "ab9584ca-4941-4653-8dbd-802fd4ea0ac8",
+        "title": "CDT Cart 2g — Various",
+        "brand": "Muha Meds",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 206,
+        "uuid": "8573fd7a-c741-42f9-8a22-8efb8a139282",
+        "title": "Flavorade Cart 2g",
+        "brand": "Flavorade",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 207,
+        "uuid": "4b43ea68-7111-4eeb-b833-1c133cd404e8",
+        "title": "Ultra Potent",
+        "brand": "Heavy Hitters",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 208,
+        "uuid": "0e459973-c043-4493-adae-5ca5c18ea332",
+        "title": "Refined Live Resin",
+        "brand": "Raw Garden",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 236,
+        "uuid": "5996c992-5b5e-48dd-b4bd-edd7154aa65c",
+        "title": "CDT Pod — Gelato (0.5g)",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 237,
+        "uuid": "eaca9ecb-0e2b-4393-a453-0e866d246060",
+        "title": "CDT Pod — Gelato (1g)",
+        "brand": "Stiiizy",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 238,
+        "uuid": "e9464675-0fc5-4034-9c7e-840987dbcf3a",
+        "title": "CDT Cart",
+        "brand": "Cake She Hits Different",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 239,
+        "uuid": "d56bc540-49df-489b-b9a1-4b148b9be6c5",
+        "title": "Refined Live Resin — Gelato",
+        "brand": "Raw Garden",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 240,
+        "uuid": "cd727c58-00d9-4426-bda2-1e7fc79f4245",
+        "title": "Ultra Potent — Watermelon",
+        "brand": "Heavy Hitters",
+        "type": "vape_cartridge",
+        "has_description": false
+    },
+    {
+        "product_id": 62,
+        "uuid": "59a50844-eb03-4f4c-b12d-36a748dd2f5d",
+        "title": "Papa & Barkley — Releaf 1:3 THC:CBD",
+        "brand": "Papa & Barkley",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 63,
+        "uuid": "a9a7f335-e3e7-4c99-b11c-2ef632341fcb",
+        "title": "Papa & Barkley — Releaf 1:1 THC:CBD",
+        "brand": "Papa & Barkley",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 64,
+        "uuid": "46f2064c-6b5e-4a33-80e3-f2ad0ba8516f",
+        "title": "Papa & Barkley — CBD Tincture",
+        "brand": "Papa & Barkley",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 65,
+        "uuid": "27a14f7a-67c1-486e-a908-57263b345424",
+        "title": "Mary's Medicinal — 1:1 Tincture",
+        "brand": "Mary's Medicinal",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 66,
+        "uuid": "eda8a744-deab-43a0-b26e-dd3aafd47e6b",
+        "title": "Mary's Medicinal — CBD Tincture",
+        "brand": "Mary's Medicinal",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 99,
+        "uuid": "9f9104fa-8e81-43e4-9135-b572daa8a395",
+        "title": "Releaf Tincture 1:1",
+        "brand": "Papa & Barkley",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 100,
+        "uuid": "8f6d507c-a566-4f8b-8ae7-c3ad27ddd331",
+        "title": "1:1 Tincture",
+        "brand": "Mary's Medicinal",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 128,
+        "uuid": "e841a0a0-c961-4c44-bcb9-11692e012cd4",
+        "title": "CBD Tincture",
+        "brand": "Papa & Barkley",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 157,
+        "uuid": "a315610b-0f45-4b54-a7ac-d41a5c1d60a3",
+        "title": "Releaf Tincture 1:3",
+        "brand": "Papa & Barkley",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 158,
+        "uuid": "6c11f3ef-0723-4118-8f8f-859215f57b55",
+        "title": "1:1 Tincture",
+        "brand": "Mary's Medicinal",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 193,
+        "uuid": "a9d430be-e649-4f66-9dc5-0c785cbc23b9",
+        "title": "Releaf Tincture 1:3",
+        "brand": "Papa & Barkley",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 249,
+        "uuid": "10ec523f-2c01-4682-8db5-e81aab3c77af",
+        "title": "Releaf Tincture 1:3",
+        "brand": "Papa & Barkley",
+        "type": "tincture",
+        "has_description": false
+    },
+    {
+        "product_id": 67,
+        "uuid": "48c7d07f-f5da-4cae-90df-6db249ee5544",
+        "title": "Papa & Barkley — Releaf Balm 1:3",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 68,
+        "uuid": "71c039a7-97e5-47ea-8e65-95decb5877ee",
+        "title": "Papa & Barkley — Releaf Patch THC",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 69,
+        "uuid": "c26e6889-b6a4-41a8-84ed-c7bacf8e0452",
+        "title": "Papa & Barkley — Releaf Patch CBD",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 70,
+        "uuid": "eb4c67c6-ca5b-4bb9-8334-60e677fc49ee",
+        "title": "Mary's Medicinal — THC Patch",
+        "brand": "Mary's Medicinal",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 71,
+        "uuid": "b01291ed-5aab-4297-a549-0880477e8825",
+        "title": "Mary's Medicinal — Compound Pen",
+        "brand": "Mary's Medicinal",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 98,
+        "uuid": "7042e981-f5d1-49c8-9fd1-b90ee6561065",
+        "title": "Releaf Balm 1:3 THC:CBD",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 127,
+        "uuid": "7705f6ca-69ce-4adb-8cb8-5ae97feacd4c",
+        "title": "Releaf Balm 1:3",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 129,
+        "uuid": "f4833512-8f2a-4940-bfee-fa39f8add841",
+        "title": "THC Transdermal Patch",
+        "brand": "Mary's Medicinal",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 159,
+        "uuid": "9b60ef8c-f54c-4d26-8d9a-43ce053d4d95",
+        "title": "THC Patch",
+        "brand": "Mary's Medicinal",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 160,
+        "uuid": "595595cc-95c6-4859-b74e-2d6316d16f8d",
+        "title": "CBD Patch",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 194,
+        "uuid": "2630a04c-0c2f-44c0-a423-710a81bf17c5",
+        "title": "Releaf Balm 1:3",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 195,
+        "uuid": "7ed3675c-6fbc-41a0-b2a0-30a022ef4f88",
+        "title": "CBD Patch",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 248,
+        "uuid": "91d7c95b-5fec-4bfa-861e-861699f3a158",
+        "title": "Releaf Balm 1:3",
+        "brand": "Papa & Barkley",
+        "type": "topical",
+        "has_description": false
+    },
+    {
+        "product_id": 227,
+        "uuid": "cb457951-fa66-498b-b89f-ba4f9093bcb2",
+        "title": "Clone — Various Strains",
+        "brand": "Purple City Genetics",
+        "type": "cannabis_clone_seed",
+        "has_description": false
+    },
+    {
+        "product_id": 228,
+        "uuid": "6a1563b7-6885-4f59-a845-6716772da86d",
+        "title": "Clone — Wappa",
+        "brand": "420 Kingdom",
+        "type": "cannabis_clone_seed",
+        "has_description": false
+    },
+    {
+        "product_id": 229,
+        "uuid": "03db5ea0-1f80-4cbb-9b19-9bb67d7eb938",
+        "title": "Seed Pack — Various",
+        "brand": "Purple City Genetics",
+        "type": "cannabis_clone_seed",
+        "has_description": false
+    }
+]

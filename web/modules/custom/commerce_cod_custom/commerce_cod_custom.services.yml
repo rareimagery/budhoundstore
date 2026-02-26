@@ -1,0 +1,6 @@
+services:
+  commerce_cod_custom.cod_surcharge_processor:
+    class: Drupal\commerce_cod_custom\OrderProcessor\CodSurchargeProcessor
+    arguments: ['@current_route_match']
+    tags:
+      - { name: commerce_order.order_processor, priority: 200 }

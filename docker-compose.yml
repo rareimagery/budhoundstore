@@ -15,6 +15,8 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
       - db_data:/var/lib/mysql
+      # init-databases.sql only runs on first container init (empty data dir)
+      - ./init-databases.sql:/docker-entrypoint-initdb.d/init-databases.sql:ro
     networks:
       - drupal_net
     healthcheck:
@@ -33,11 +35,21 @@ services:
         condition: service_healthy
     env_file: .env
     ports:
-      - "8080:80"
+      - "8080:80"   # default site  (localhost:8080)
+      - "8081:80"   # budhound.app  (localhost:8081)
+      - "8082:80"   # rareimagery   (localhost:8082)
     volumes:
-      - drupal_files:/var/www/html/web/sites/default/files
-      - drupal_modules:/var/www/html/web/modules/contrib
-      - drupal_themes:/var/www/html/web/themes/contrib
+      # ── Default site ──────────────────────────────────────────
+      # DocumentRoot is /var/www/html (→ /opt/drupal/web); no /web/ prefix
+      - drupal_files:/var/www/html/sites/default/files
+      - drupal_modules:/var/www/html/modules/contrib
+      - drupal_themes:/var/www/html/themes/contrib
+      # ── Custom modules (bind-mount so edits persist across rebuilds) ──
+      - ./web/modules/custom:/var/www/html/modules/custom
+      # ── Multisite: bind-mount site directories from host ──────
+      - ./web/sites/sites.php:/var/www/html/sites/sites.php:ro
+      - ./web/sites/budhound.app:/var/www/html/sites/budhound.app
+      - ./web/sites/rareimagery.net:/var/www/html/sites/rareimagery.net
     networks:
       - drupal_net
 

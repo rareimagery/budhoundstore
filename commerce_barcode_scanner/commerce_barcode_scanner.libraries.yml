@@ -1,0 +1,7 @@
+scanner:
+  version: 1.0
+  js:
+    js/barcode_scanner.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

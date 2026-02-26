@@ -1,0 +1,9 @@
+name: 'BudStore Checkout'
+type: module
+description: 'Cash-on-Delivery checkout REST endpoint for the React headless frontend.'
+core_version_requirement: ^10 || ^11
+package: BudStore
+dependencies:
+  - drupal:serialization
+  - commerce:commerce_order
+  - commerce:commerce_payment

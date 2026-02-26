@@ -1,0 +1,9 @@
+name: 'Commerce COD Custom'
+type: module
+description: 'Cash on Delivery payment gateway with surcharge and region restrictions.'
+core_version_requirement: ^10 || ^11
+package: Commerce
+dependencies:
+  - commerce:commerce_payment
+  - commerce:commerce_order
+  - commerce:commerce_price

@@ -1,0 +1,66 @@
+order_default_with_cod:
+  id: order_default_with_cod
+  group: commerce_order
+  label: 'Dispensary with COD'
+  states:
+    draft:
+      label: Draft
+    placed:
+      label: Placed
+    processing:
+      label: Processing
+    ready:
+      label: 'Ready for Pickup / Delivery'
+    out_for_delivery:
+      label: 'Out for Delivery'
+    pickup_ready:
+      label: 'Pickup Ready'
+    delivered:
+      label: Delivered
+    cod_pending:
+      label: 'Awaiting COD Payment'
+    completed:
+      label: Completed
+    canceled:
+      label: Canceled
+  transitions:
+    place:
+      label: 'Place order'
+      from: [draft]
+      to: placed
+    process:
+      label: 'Begin processing'
+      from: [placed]
+      to: processing
+    ready:
+      label: 'Mark ready'
+      from: [processing]
+      to: ready
+    ship:
+      label: 'Send out for delivery'
+      from: [ready]
+      to: out_for_delivery
+    pickup_prepare:
+      label: 'Ready for pickup'
+      from: [ready]
+      to: pickup_ready
+    deliver:
+      label: 'Mark delivered'
+      from: [out_for_delivery]
+      to: delivered
+    await_cod:
+      label: 'Awaiting COD payment'
+      from: [delivered]
+      to: cod_pending
+    cod_received:
+      label: 'COD payment received'
+      from: [cod_pending]
+      to: completed
+    complete:
+      label: 'Complete order'
+      from: [delivered, pickup_ready]
+      to: completed
+    cancel:
+      label: 'Cancel order'
+      from: [draft, placed, processing, ready, out_for_delivery, pickup_ready, delivered, cod_pending]
+      to: canceled

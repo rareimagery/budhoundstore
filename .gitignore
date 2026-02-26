@@ -1,5 +1,6 @@
 # Environment and secrets
 .env
+client_secret_*.json
 
 # Drupal (when using Composer from host)
 drupal/vendor/
@@ -17,3 +18,45 @@ list-*.php
 rebuild-*.php
 check-*.php
 setup-*.php
+
+# One-off admin/migration scripts
+add-*.php
+apply-*.php
+assign-*.php
+attach-*.php
+audit-*.php
+consolidate-*.php
+create-*.php
+export-*.php
+get-*.php
+grant-*.php
+install-*.php
+reconfigure-*.php
+scrape-*.php
+scrape-*.py
+set-*.php
+update-*.php
+
+# One-off check/debug scripts (all languages)
+check-*.ps1
+check-*.js
+check-*.py
+install-*.sh
+
+# IDE / tool config
+.cursor/
+.claude/
+.tmp/
+
+# Archives and temp data
+*.zip
+files/
+api_test.json
+orders_response.json
+
+# Node modules (in subprojects)
+**/node_modules/
+
+# OS files
+Thumbs.db
+.DS_Store

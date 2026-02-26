@@ -1,0 +1,8 @@
+google_api_key: ''
+google_cse_id: ''
+auto_attach: false
+max_results: 6
+safe_search: 'active'
+default_image_size: 'large'
+fallback_enabled: true
+fallback_image_uuid: ''

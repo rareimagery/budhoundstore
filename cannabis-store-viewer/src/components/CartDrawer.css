@@ -1,0 +1,141 @@
+/* ============================================================
+   CartDrawer.css — styles specific to the cart drawer UI
+   Do NOT add global styles here; keep them in App.css.
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   Empty state
+   ---------------------------------------------------------- */
+.drawer-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.drawer-empty__icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  opacity: 0.4;
+}
+
+.drawer-empty__title {
+  font-weight: 600;
+  color: #1b4332;
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.drawer-empty__sub {
+  color: #888;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* ----------------------------------------------------------
+   Item avatar (letter placeholder)
+   ---------------------------------------------------------- */
+.drawer-item-img {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.drawer-item-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #d8f3e3, #b7e4c7);
+  color: #2d6a4f;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------
+   Item info column
+   ---------------------------------------------------------- */
+.drawer-item-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drawer-item-title {
+  font-weight: 600;
+  color: #1b4332;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drawer-item-sku {
+  color: #999;
+  font-size: 0.75rem;
+  display: block;
+}
+
+/* ----------------------------------------------------------
+   Item controls column
+   ---------------------------------------------------------- */
+.drawer-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* ----------------------------------------------------------
+   Item price column
+   ---------------------------------------------------------- */
+.drawer-item-price {
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #1b4332;
+  min-width: 52px;
+  text-align: right;
+}
+
+/* ----------------------------------------------------------
+   Footer meta row (item count + "Total" label)
+   ---------------------------------------------------------- */
+.drawer-footer-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.drawer-footer-total-label {
+  /* inherits color from .drawer-footer-meta */
+}
+
+.drawer-footer-amount {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 12px;
+}
+
+/* ----------------------------------------------------------
+   Cash-on-delivery note below checkout button
+   ---------------------------------------------------------- */
+.drawer-cod-note {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #888;
+  margin: 6px 0 0;
+}

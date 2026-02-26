@@ -1,0 +1,2 @@
+function o(n,e="USD"){return new Intl.NumberFormat("en-US",{style:"currency",currency:e}).format(n)}function r(n,e={}){const t=new Date(n);return new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit",...e}).format(t)}function a(n){const e=Math.floor((Date.now()-new Date(n))/1e3);return e<60?"Just now":e<3600?`${Math.floor(e/60)}m ago`:e<86400?`${Math.floor(e/3600)}h ago`:r(n,{hour:void 0,minute:void 0})}export{a,r as b,o as f};
+//# sourceMappingURL=formatters-DEgqW1PF.js.map

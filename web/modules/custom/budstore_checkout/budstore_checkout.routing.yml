@@ -1,0 +1,8 @@
+budstore_checkout.cod:
+  path: '/api/cod-checkout'
+  defaults:
+    _controller: '\Drupal\budstore_checkout\Controller\CodCheckoutController::checkout'
+    _format: 'json'
+  requirements:
+    _access: 'TRUE'
+  methods: [POST, OPTIONS]

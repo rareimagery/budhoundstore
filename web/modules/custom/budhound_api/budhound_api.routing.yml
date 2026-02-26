@@ -1,0 +1,161 @@
+# All routes use OAuth2 authentication and check permissions in controllers.
+# This avoids Simple OAuth v6 scope-based permission conflicts.
+
+# ── Current User Info (with roles, store, permissions) ──
+budhound_api.me:
+  path: '/api/budhound/me'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\UserController::me'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [GET]
+
+# ── Dashboard Stats ──
+budhound_api.dashboard:
+  path: '/api/budhound/dashboard'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\DashboardController::stats'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [GET]
+
+# ── Inventory Adjustment ──
+budhound_api.inventory_adjust:
+  path: '/api/budhound/inventory/{product_variation_id}/adjust'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\InventoryController::adjust'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+    product_variation_id: \d+
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [POST]
+
+# ── Inventory Audit Log ──
+budhound_api.inventory_log:
+  path: '/api/budhound/inventory/log'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\InventoryController::auditLog'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [GET]
+
+# ── Order Status Update ──
+budhound_api.order_status:
+  path: '/api/budhound/orders/{order_id}/status'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\OrderController::updateStatus'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+    order_id: \d+
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [PATCH]
+
+# ── Assign Driver to Order ──
+budhound_api.order_assign_driver:
+  path: '/api/budhound/orders/{order_id}/assign-driver'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\OrderController::assignDriver'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+    order_id: \d+
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [PATCH]
+
+# ── Process Refund ──
+budhound_api.refund:
+  path: '/api/budhound/orders/{order_id}/refund'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\OrderController::refund'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+    order_id: \d+
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [POST]
+
+# ── Receive COD Payment ──
+budhound_api.receive_payment:
+  path: '/api/budhound/orders/{order_id}/receive-payment'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\OrderController::receivePayment'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+    order_id: \d+
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [POST]
+
+# ── Sales Reports ──
+budhound_api.report_sales:
+  path: '/api/budhound/reports/sales'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\ReportController::sales'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [GET]
+
+# ── Tax Report ──
+budhound_api.report_tax:
+  path: '/api/budhound/reports/tax'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\ReportController::tax'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [GET]
+
+# ── Staff List ──
+budhound_api.staff_list:
+  path: '/api/budhound/staff'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\StaffController::list'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [GET]
+
+# ── Staff Invite ──
+budhound_api.staff_invite:
+  path: '/api/budhound/staff/invite'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\StaffController::invite'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [POST]
+
+# ── POS Quick Sale ──
+budhound_api.sales.create:
+  path: '/api/budhound/sales/create'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\SalesController::createSale'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [POST]
+
+# ── Full Order Creation ──
+budhound_api.orders.create:
+  path: '/api/budhound/orders/create'
+  defaults:
+    _controller: '\Drupal\budhound_api\Controller\SalesController::createFullOrder'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    _auth: ['oauth2', 'cookie']
+  methods: [POST]

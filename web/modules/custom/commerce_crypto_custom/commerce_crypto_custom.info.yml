@@ -1,0 +1,8 @@
+name: 'Commerce Crypto Custom'
+type: module
+description: 'Cryptocurrency payments via BTCPay Server or Coinbase Commerce.'
+core_version_requirement: ^10 || ^11
+package: Commerce
+dependencies:
+  - commerce:commerce_payment
+  - commerce:commerce_order

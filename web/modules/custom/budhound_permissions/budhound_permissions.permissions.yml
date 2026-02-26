@@ -1,0 +1,121 @@
+# ── Dashboard ──
+'view store dashboard':
+  title: 'View store dashboard'
+  description: 'Access the management dashboard'
+
+'view store analytics':
+  title: 'View store analytics'
+  description: 'View revenue charts and advanced analytics'
+
+# ── Orders ──
+'view own store orders':
+  title: 'View own store orders'
+  description: 'View orders belonging to assigned store'
+
+'view assigned orders':
+  title: 'View assigned orders only'
+  description: 'View only orders assigned to this user'
+
+'manage order status':
+  title: 'Manage order status'
+  description: 'Update order status (processing, ready, out for delivery, etc.)'
+
+'assign delivery driver':
+  title: 'Assign delivery driver'
+  description: 'Assign a driver to an order'
+
+'process refunds':
+  title: 'Process refunds'
+  description: 'Issue refunds on completed orders'
+
+# ── Inventory ──
+'view store inventory':
+  title: 'View store inventory'
+  description: 'View inventory levels for assigned store'
+
+'manage store inventory':
+  title: 'Manage store inventory'
+  description: 'Adjust stock levels, receive shipments'
+
+'view inventory audit log':
+  title: 'View inventory audit log'
+  description: 'View history of all inventory changes'
+
+# ── Products ──
+'view store products':
+  title: 'View store products'
+  description: 'View product catalog for assigned store'
+
+'manage store products':
+  title: 'Manage store products'
+  description: 'Create, edit, delete products'
+
+'manage product pricing':
+  title: 'Manage product pricing'
+  description: 'Edit product prices and discounts'
+
+# ── Sales / POS ──
+'create sales transactions':
+  title: 'Create sales transactions'
+  description: 'Process point-of-sale transactions'
+
+'view own sales':
+  title: 'View own sales'
+  description: 'View sales created by this user'
+
+'view all store sales':
+  title: 'View all store sales'
+  description: 'View all sales for the store'
+
+# ── Customers ──
+'view store customers':
+  title: 'View store customers'
+  description: 'View customer list and profiles'
+
+'view assigned customers':
+  title: 'View assigned customers'
+  description: 'View only customers assigned to this user'
+
+'view customer purchase history':
+  title: 'View customer purchase history'
+  description: 'Access full purchase history for customers'
+
+# ── Reports ──
+'view sales reports':
+  title: 'View sales reports'
+  description: 'Access sales and revenue reports'
+
+'view tax reports':
+  title: 'View tax compliance reports'
+  description: 'Access excise and sales tax reports'
+
+'view inventory reports':
+  title: 'View inventory reports'
+  description: 'Access inventory movement and valuation reports'
+
+'export reports':
+  title: 'Export reports'
+  description: 'Download reports as CSV or PDF'
+
+# ── Staff ──
+'manage store staff':
+  title: 'Manage store staff'
+  description: 'Invite, edit, deactivate staff members'
+
+'view store staff':
+  title: 'View store staff'
+  description: 'View team members and schedules'
+
+# ── Settings ──
+'manage store settings':
+  title: 'Manage store settings'
+  description: 'Edit store profile, hours, delivery zones'
+
+# ── Compliance ──
+'view compliance logs':
+  title: 'View compliance audit logs'
+  description: 'Access full audit trail of compliance-related actions'
+
+'perform id verification':
+  title: 'Perform ID verification'
+  description: 'Verify customer identity at delivery'

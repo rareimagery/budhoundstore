@@ -1,0 +1,293 @@
+/* =========================================================
+   ProductDetailPage.css — earthy-organic theme
+   ========================================================= */
+
+.pdp-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.pdp-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #8D6E63;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.pdp-back-link:hover {
+  color: #6D4C41;
+  text-decoration: underline;
+}
+
+/* Two-column layout */
+.pdp-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ── Image column ──────────────────────────────────────── */
+.pdp-image-col {
+  position: sticky;
+  top: 80px;
+}
+
+.pdp-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 1px solid #E8DFD3;
+  background: #FFFDF9;
+  display: block;
+}
+
+.pdp-image-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  background: #EFEBE9;
+  border: 2px dashed #BCAAA4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #BCAAA4;
+}
+
+.pdp-leafly-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  color: #8D6E63;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pdp-leafly-link:hover {
+  color: #6D4C41;
+  text-decoration: underline;
+}
+
+/* ── Detail column ─────────────────────────────────────── */
+.pdp-badge {
+  display: inline-block;
+  background: #EFEBE9;
+  color: #3E2723;
+  border-radius: 50px;
+  padding: 4px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.pdp-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3E2723;
+  line-height: 1.2;
+  margin: 0 0 6px;
+}
+
+.pdp-brand {
+  color: #8D6E63;
+  font-size: 0.95rem;
+  margin: 0 0 12px;
+}
+
+.pdp-price {
+  font-size: 1.1rem;
+  color: #5D4037;
+  margin: 0 0 4px;
+}
+
+.pdp-price strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #6D4C41;
+  font-size: 1.5rem;
+}
+
+.pdp-divider {
+  border: none;
+  border-top: 1px solid #E8DFD3;
+  margin: 20px 0;
+}
+
+/* Description */
+.pdp-section-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3E2723;
+  margin: 0 0 10px;
+}
+
+.pdp-description {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #5D4037;
+  margin: 0;
+}
+
+.pdp-no-desc {
+  font-style: italic;
+  color: #BCAAA4;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ── Cart section ──────────────────────────────────────── */
+.pdp-single-atc {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Variations */
+.pdp-variations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pdp-variation-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  background: #FFFDF9;
+  border: 1px solid #E8DFD3;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.pdp-variation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pdp-variation-label {
+  font-size: 0.875rem;
+  color: #5D4037;
+  font-weight: 500;
+}
+
+.pdp-variation-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6D4C41;
+}
+
+.pdp-variation-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Qty stepper */
+.pdp-qty {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid #E8DFD3;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.pdp-qty-btn {
+  width: 34px;
+  height: 34px;
+  background: #EFEBE9;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #6D4C41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.pdp-qty-btn:hover {
+  background: #E8DFD3;
+}
+
+.pdp-qty-val {
+  width: 36px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3E2723;
+  user-select: none;
+}
+
+/* COD note */
+.pdp-cod-note {
+  margin-top: 20px;
+  padding: 12px 16px;
+  background: #FDF6EE;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #8D6E63;
+  line-height: 1.5;
+}
+
+.pdp-not-found {
+  text-align: center;
+  padding-top: 60px;
+}
+
+/* ── Sale badge ──────────────────────────────── */
+.pdp-sale-badge {
+  display: inline-block;
+  background: #B71C1C;
+  color: #fff;
+  border-radius: 50px;
+  padding: 4px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  margin-left: 8px;
+  font-family: 'Nunito Sans', sans-serif;
+  vertical-align: middle;
+}
+
+/* ── Responsive ────────────────────────────────────────── */
+@media (max-width: 680px) {
+  .pdp-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .pdp-image-col {
+    position: static;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .pdp-title {
+    font-size: 1.5rem;
+  }
+
+  .pdp-variation-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

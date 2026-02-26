@@ -1,0 +1,182 @@
+<?php
+
+/**
+ * @file
+ * Auto-generates Commerce product variation SKUs based on store + product type.
+ *
+ * Format: {STORE_CODE}-{TYPE_CODE}-{####}
+ * Examples:
+ *   EL-FLW-0042   (Elevate Lompoc, Flower)
+ *   OPL-VAP-0015  (One Plant Lompoc, Vape Cartridge)
+ *   RD-EDI-0007   (The Roots Dispensary, Edible)
+ *   MJD-PRL-0003  (MJ Direct, Pre-Roll)
+ *
+ * How it works:
+ *   1. variation_presave  — if SKU is blank, assign a temporary placeholder so
+ *                          Commerce's uniqueness constraint is satisfied.
+ *   2. product_presave    — replace any placeholder SKUs with the final
+ *                          store + type + number format (store is known here).
+ */
+
+use Drupal\commerce_product\Entity\ProductVariationInterface;
+use Drupal\commerce_product\Entity\ProductInterface;
+
+// ── Hooks ─────────────────────────────────────────────────────────────────────
+
+/**
+ * Implements hook_entity_base_field_info_alter().
+ *
+ * Removes the entity-level required constraint from the SKU field so that
+ * a blank SKU passes validation. Our presave hook fills it in before save.
+ */
+function budstore_sku_entity_base_field_info_alter(&$fields, \Drupal\Core\Entity\EntityTypeInterface $entity_type) {
+  if ($entity_type->id() === 'commerce_product_variation' && isset($fields['sku'])) {
+    $fields['sku']->setRequired(FALSE);
+  }
+}
+
+/**
+ * Implements hook_field_widget_single_element_form_alter().
+ *
+ * Removes the form-level #required flag from the SKU widget so the browser
+ * does not block submission when the field is left blank.
+ */
+function budstore_sku_field_widget_single_element_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, array $context) {
+  $field_definition = $context['items']->getFieldDefinition();
+  if ($field_definition->getName() === 'sku'
+    && $field_definition->getTargetEntityTypeId() === 'commerce_product_variation') {
+    $element['value']['#required']    = FALSE;
+    $element['value']['#placeholder'] = 'Leave blank — auto-generates as STORE-TYPE-####';
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for commerce_product_variation.
+ *
+ * Assigns a unique placeholder when SKU is blank so Commerce doesn't reject
+ * the save. The product_presave hook below replaces it with the real SKU.
+ */
+function budstore_sku_commerce_product_variation_presave(ProductVariationInterface $variation) {
+  if (!_budstore_sku_is_blank($variation->getSku())) {
+    return;
+  }
+  // Placeholder: will be overwritten in product_presave once we know the store.
+  $variation->set('sku', 'AUTO-' . strtoupper(substr(uniqid('', TRUE), -10)));
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for commerce_product.
+ *
+ * Replaces placeholder SKUs with the final STORE-TYPE-#### format.
+ */
+function budstore_sku_commerce_product_presave(ProductInterface $product) {
+  // Determine store code from the first store assigned to this product.
+  $stores     = $product->getStores();
+  $store      = !empty($stores) ? reset($stores) : NULL;
+  $store_code = $store ? _budstore_sku_store_code($store->getName()) : 'BST';
+  $type_code  = _budstore_sku_type_code($product->bundle());
+
+  $needs_resave = [];
+  foreach ($product->getVariations() as $variation) {
+    if (strpos($variation->getSku(), 'AUTO-') === 0) {
+      $sku = _budstore_sku_generate($store_code, $type_code);
+      $variation->set('sku', $sku);
+      $needs_resave[] = $variation;
+    }
+  }
+
+  // Re-save each variation that got a real SKU.
+  // (Variations were already saved by IEF; we update them here.)
+  foreach ($needs_resave as $variation) {
+    $variation->save();
+  }
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
+/**
+ * Returns TRUE if a SKU string is empty / whitespace-only.
+ */
+function _budstore_sku_is_blank(?string $sku): bool {
+  return $sku === NULL || trim($sku) === '';
+}
+
+/**
+ * Derives a short uppercase store code from a store name.
+ *
+ * Skips common filler words and takes the first letter of each remaining word,
+ * capped at 4 characters.
+ *
+ * Examples:
+ *   "Elevate Lompoc"          → EL
+ *   "One Plant Lompoc"        → OPL
+ *   "Royal Healing Emporium"  → RHE
+ *   "The Roots Dispensary"    → RD
+ *   "Bleu Diamond Delivery"   → BDD
+ *   "MJ Direct"               → MJD
+ *   "Leaf Dispensary"         → LD
+ */
+function _budstore_sku_store_code(string $store_name): string {
+  $skip  = ['the', 'a', 'an', 'and', 'of', 'in', 'at', 'for', '&', 'lompoc'];
+  $words = preg_split('/[\s\-_]+/', $store_name);
+  $code  = '';
+
+  foreach ($words as $word) {
+    $clean = preg_replace('/[^a-zA-Z0-9]/', '', $word);
+    if ($clean !== '' && !in_array(strtolower($clean), $skip, TRUE)) {
+      $code .= strtoupper($clean[0]);
+    }
+  }
+
+  // Ensure we always return something usable.
+  return substr($code, 0, 4) ?: 'BST';
+}
+
+/**
+ * Maps product bundle machine names to 3-letter type codes.
+ */
+function _budstore_sku_type_code(string $bundle): string {
+  $map = [
+    'flower'              => 'FLW',
+    'pre_roll'            => 'PRL',
+    'edible'              => 'EDI',
+    'concentrate'         => 'CON',
+    'vape_cartridge'      => 'VAP',
+    'tincture'            => 'TIN',
+    'topical'             => 'TOP',
+    'accessory'           => 'ACC',
+    'cannabis_clone_seed' => 'CLN',
+  ];
+  return $map[$bundle] ?? strtoupper(substr($bundle, 0, 3));
+}
+
+/**
+ * Generates a unique SKU in the form STORE-TYPE-####.
+ *
+ * Tries random 4-digit numbers (1-9999) until one is unused in the DB.
+ * Falls back to a timestamp suffix if all attempts fail (extremely unlikely).
+ */
+function _budstore_sku_generate(string $store_code, string $type_code): string {
+  $db       = \Drupal::database();
+  $prefix   = "{$store_code}-{$type_code}-";
+  $attempts = 0;
+
+  do {
+    $num = str_pad(mt_rand(1, 9999), 4, '0', STR_PAD_LEFT);
+    $sku = $prefix . $num;
+
+    $exists = $db->query(
+      'SELECT 1 FROM {commerce_product_variation_field_data} WHERE sku = :sku LIMIT 1',
+      [':sku' => $sku]
+    )->fetchField();
+
+    $attempts++;
+  } while ($exists && $attempts < 30);
+
+  // Extremely unlikely fallback: use last 6 digits of the current timestamp.
+  if ($exists) {
+    $sku = $prefix . substr((string) time(), -6);
+  }
+
+  return $sku;
+}

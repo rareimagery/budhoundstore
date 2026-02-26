@@ -1,0 +1,81 @@
+<?php
+
+use Drupal\user\Entity\Role;
+
+/**
+ * Implements hook_install().
+ */
+function budhound_permissions_install() {
+  $role_permissions = [
+    'store_owner' => [
+      'view store dashboard',
+      'view store analytics',
+      'view own store orders',
+      'manage order status',
+      'assign delivery driver',
+      'process refunds',
+      'view store inventory',
+      'manage store inventory',
+      'view inventory audit log',
+      'view store products',
+      'manage store products',
+      'manage product pricing',
+      'create sales transactions',
+      'view all store sales',
+      'view store customers',
+      'view customer purchase history',
+      'view sales reports',
+      'view tax reports',
+      'view inventory reports',
+      'export reports',
+      'manage store staff',
+      'view store staff',
+      'manage store settings',
+      'view compliance logs',
+      'perform id verification',
+    ],
+    'store_manager' => [
+      'view store dashboard',
+      'view store analytics',
+      'view own store orders',
+      'manage order status',
+      'assign delivery driver',
+      'process refunds',
+      'view store inventory',
+      'manage store inventory',
+      'view store products',
+      'manage store products',
+      'create sales transactions',
+      'view all store sales',
+      'view store customers',
+      'view customer purchase history',
+      'view sales reports',
+      'view inventory reports',
+      'export reports',
+      'view store staff',
+      'perform id verification',
+    ],
+    'budtender' => [
+      'view store dashboard',
+      'view assigned orders',
+      'manage order status',
+      'view store inventory',
+      'manage store inventory',
+      'view store products',
+      'create sales transactions',
+      'view own sales',
+      'view assigned customers',
+      'perform id verification',
+    ],
+  ];
+
+  foreach ($role_permissions as $role_id => $permissions) {
+    $role = Role::load($role_id);
+    if ($role) {
+      foreach ($permissions as $permission) {
+        $role->grantPermission($permission);
+      }
+      $role->save();
+    }
+  }
+}

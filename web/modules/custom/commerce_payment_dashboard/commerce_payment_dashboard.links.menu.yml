@@ -1,0 +1,5 @@
+commerce_payment_dashboard.overview:
+  title: 'Payment Dashboard'
+  route_name: commerce_payment_dashboard.overview
+  parent: commerce.admin_commerce
+  weight: -5

@@ -1,0 +1,9 @@
+name: 'BudHound Image Fetch'
+type: module
+description: 'Auto-fetch product images via Google Custom Search API for cannabis products without images.'
+core_version_requirement: ^10 || ^11
+package: BudHound
+dependencies:
+  - drupal:file
+  - commerce:commerce_product
+configure: budhound_image_fetch.settings_form

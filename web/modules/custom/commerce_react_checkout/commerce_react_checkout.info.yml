@@ -1,0 +1,11 @@
+name: 'Commerce React Checkout'
+type: module
+description: 'REST endpoints for React headless checkout and Stripe payment processing.'
+core_version_requirement: ^10 || ^11
+package: Commerce
+dependencies:
+  - drupal:rest
+  - drupal:serialization
+  - commerce:commerce_order
+  - commerce:commerce_payment
+  - commerce:commerce_checkout

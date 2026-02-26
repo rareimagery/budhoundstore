@@ -1,0 +1,7 @@
+services:
+  budhound_image_fetch.google_image_search:
+    class: Drupal\budhound_image_fetch\Service\GoogleImageSearch
+    arguments:
+      - '@http_client'
+      - '@config.factory'
+      - '@file_system'

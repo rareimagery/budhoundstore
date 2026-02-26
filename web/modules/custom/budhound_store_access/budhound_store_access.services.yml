@@ -1,0 +1,11 @@
+services:
+  budhound_store_access.jsonapi_store_filter:
+    class: Drupal\budhound_store_access\EventSubscriber\JsonApiStoreFilterSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  budhound_store_access.unscoped_token_access_policy:
+    class: Drupal\budhound_store_access\Access\UnscopedTokenAccessPolicy
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: access_policy, priority: -1000 }

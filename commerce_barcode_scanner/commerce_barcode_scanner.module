@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Attaches a barcode/QR scanner button to Commerce product add/edit forms.
+ *
+ * Staff click "📷 Scan Barcode" next to the SKU field, point their device
+ * camera at the product package, and the barcode value is filled in
+ * automatically. Supports UPC, EAN, Code128, QR, DataMatrix, and more.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function commerce_barcode_scanner_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  $form_object = $form_state->getFormObject();
+
+  // Only attach to Commerce product add / edit forms.
+  if (!($form_object instanceof \Drupal\commerce_product\Form\ProductForm)) {
+    return;
+  }
+
+  $form['#attached']['library'][] = 'commerce_barcode_scanner/scanner';
+}
