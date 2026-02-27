@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useQueryClient } from '@tanstack/react-query';
 import { useDashboardStats } from '../../hooks/useDashboard';
 import { useAuth } from '../../contexts/AuthContext';
 import PermissionGate from '../auth/PermissionGate';
@@ -25,6 +26,7 @@ const RANGE_OPTIONS = [
 export default function DashboardPage() {
   const [range, setRange] = useState('today');
   const { user } = useAuth();
+  const queryClient = useQueryClient();
   const { data: stats, isLoading, isError } = useDashboardStats(range);
 
   function getGreeting() {
@@ -39,7 +41,7 @@ export default function DashboardPage() {
       <div className="text-center py-12">
         <p className="text-red-600">Failed to load dashboard data.</p>
         <button
-          onClick={() => window.location.reload()}
+          onClick={() => queryClient.invalidateQueries(['dashboard'])}
           className="mt-2 text-sm text-brand-600 underline"
         >
           Retry

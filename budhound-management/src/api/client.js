@@ -1,23 +1,33 @@
 import axios from 'axios';
+import { isNative } from '../utils/platform';
+import * as storage from '../utils/storage';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 const apiClient = axios.create({
   baseURL: API_BASE,
-  withCredentials: true,
+  // Cookies only work on web — native uses Preferences for token persistence.
+  withCredentials: !isNative,
 });
 
-// ── Token state (in-memory only — never localStorage) ──
+// ── Token state (in-memory for fast access) ──
 let accessToken = null;
 let refreshToken = null;
 let refreshPromise = null;
 
 export function setAccessToken(token) {
   accessToken = token;
+  // Persist to native secure storage (async, fire-and-forget).
+  if (isNative && token) {
+    storage.setItem(storage.KEYS.ACCESS_TOKEN, token);
+  }
 }
 
 export function setRefreshToken(token) {
   refreshToken = token;
+  if (isNative && token) {
+    storage.setItem(storage.KEYS.REFRESH_TOKEN, token);
+  }
 }
 
 export function getAccessToken() {
@@ -27,6 +37,27 @@ export function getAccessToken() {
 export function clearAccessToken() {
   accessToken = null;
   refreshToken = null;
+  if (isNative) {
+    storage.removeItem(storage.KEYS.ACCESS_TOKEN);
+    storage.removeItem(storage.KEYS.REFRESH_TOKEN);
+    storage.removeItem(storage.KEYS.USER_DATA);
+  }
+}
+
+/**
+ * Restore tokens from native storage on app launch.
+ * Call once during app initialization (before session restore).
+ */
+export async function restoreTokensFromStorage() {
+  if (!isNative) return false;
+  const storedAccess = await storage.getItem(storage.KEYS.ACCESS_TOKEN);
+  const storedRefresh = await storage.getItem(storage.KEYS.REFRESH_TOKEN);
+  if (storedRefresh) {
+    refreshToken = storedRefresh;
+    if (storedAccess) accessToken = storedAccess;
+    return true;
+  }
+  return false;
 }
 
 // ── Request interceptor: attach Bearer token ──
@@ -85,7 +116,7 @@ async function attemptTokenRefresh() {
   );
   // Update refresh token if a new one is issued.
   if (response.data.refresh_token) {
-    refreshToken = response.data.refresh_token;
+    setRefreshToken(response.data.refresh_token);
   }
   return response.data.access_token;
 }

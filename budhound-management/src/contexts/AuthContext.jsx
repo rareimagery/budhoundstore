@@ -10,8 +10,11 @@ import apiClient, {
   setAccessToken,
   setRefreshToken,
   clearAccessToken,
+  restoreTokensFromStorage,
 } from '../api/client';
 import { ENDPOINTS } from '../api/endpoints';
+import { isNative } from '../utils/platform';
+import * as storage from '../utils/storage';
 
 const AuthContext = createContext(null);
 
@@ -20,12 +23,23 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // ── Restore session on mount via refresh token cookie ──
+  // ── Restore session on mount ──
+  // Web: uses httpOnly refresh token cookie.
+  // Native: restores tokens from Capacitor Preferences first.
   useEffect(() => {
     let cancelled = false;
 
     async function restoreSession() {
       try {
+        // On native, load persisted tokens before attempting refresh.
+        if (isNative) {
+          const hasTokens = await restoreTokensFromStorage();
+          if (!hasTokens) {
+            if (!cancelled) setLoading(false);
+            return;
+          }
+        }
+
         const tokenRes = await apiClient.post(
           ENDPOINTS.TOKEN,
           new URLSearchParams({
@@ -42,6 +56,11 @@ export function AuthProvider({ children }) {
         const meRes = await apiClient.get(ENDPOINTS.ME);
         if (cancelled) return;
         setUser(meRes.data);
+
+        // Cache user data for faster native cold start.
+        if (isNative) {
+          storage.setItem(storage.KEYS.USER_DATA, JSON.stringify(meRes.data));
+        }
       } catch {
         // No valid session — user must log in.
         if (!cancelled) setUser(null);
@@ -84,6 +103,11 @@ export function AuthProvider({ children }) {
 
       const meRes = await apiClient.get(ENDPOINTS.ME);
       setUser(meRes.data);
+
+      if (isNative) {
+        storage.setItem(storage.KEYS.USER_DATA, JSON.stringify(meRes.data));
+      }
+
       return meRes.data;
     } catch (err) {
       const message =

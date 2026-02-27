@@ -36,7 +36,11 @@ $settings['trusted_host_patterns'] = [
   '^www\.budhound\.app$',
   '^budhound\.local$',
   '^localhost$',
+  '^10.0.2.2$',
 ];
 
 // ── Performance (optional, enable in production) ──────────────────────────────
 # $settings['cache']['default'] = 'cache.backend.redis';
+
+// ── Service overrides (CORS, etc.) ────────────────────────────────────────────
+$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';

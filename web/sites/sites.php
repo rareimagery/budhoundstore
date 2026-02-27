@@ -22,3 +22,7 @@ $sites['rareimagery.local']   = 'rareimagery.net';
 // Access budhound on http://localhost:8081 and rareimagery on http://localhost:8082
 $sites['8081.localhost'] = 'budhound.app';
 $sites['8082.localhost'] = 'rareimagery.net';
+
+// ── Android emulator (10.0.2.2 = host loopback) ──────────────────────────────
+$sites['8081.10.0.2.2'] = 'budhound.app';
+$sites['8082.10.0.2.2'] = 'rareimagery.net';

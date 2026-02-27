@@ -16,7 +16,7 @@ $databases['default']['default'] = [
   'prefix'          => '',
   'collation'       => 'utf8mb4_unicode_ci',
   'isolation_level' => 'READ COMMITTED',
-  'namespace'       => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'namespace'       => 'Drupal\mysql\Driver\Database\mysql',
   'autoload'        => 'core/modules/mysql/src/Driver/Database/mysql/',
 ];
 
@@ -36,4 +36,8 @@ $settings['trusted_host_patterns'] = [
   '^www\.rareimagery\.net$',
   '^rareimagery\.local$',
   '^localhost$',
+  '^10\.0\.2\.2$',
 ];
+
+// ── Service overrides (CORS, etc.) ────────────────────────────────────────────
+$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';

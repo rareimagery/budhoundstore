@@ -1,6 +1,7 @@
 import { useEffect, useRef, useCallback } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useQueryClient } from '@tanstack/react-query';
+import { useAppLifecycle } from './useAppLifecycle';
 import toast from 'react-hot-toast';
 
 export function useWebSocket() {
@@ -12,6 +13,12 @@ export function useWebSocket() {
   const connect = useCallback(() => {
     if (!isAuthenticated || !user?.store?.id) return;
     if (wsRef.current?.readyState === WebSocket.OPEN) return;
+
+    // Close stale connection before reconnecting.
+    if (wsRef.current) {
+      wsRef.current.onclose = null; // prevent reconnect loop
+      wsRef.current.close();
+    }
 
     const wsUrl = `${import.meta.env.VITE_WS_URL}?store=${user.store.id}&user=${user.id}`;
     const ws = new WebSocket(wsUrl);
@@ -61,11 +68,23 @@ export function useWebSocket() {
     wsRef.current = ws;
   }, [isAuthenticated, user, queryClient]);
 
+  // Reconnect WebSocket + refetch stale data when app returns to foreground.
+  useAppLifecycle({
+    onResume: () => {
+      console.log('[App] Resumed — reconnecting WS and refreshing data');
+      connect();
+      queryClient.invalidateQueries();
+    },
+  });
+
   useEffect(() => {
     connect();
     return () => {
       if (reconnectTimer.current) clearTimeout(reconnectTimer.current);
-      wsRef.current?.close();
+      if (wsRef.current) {
+        wsRef.current.onclose = null;
+        wsRef.current.close();
+      }
     };
   }, [connect]);
 }

@@ -1,0 +1,23 @@
+parameters:
+  cors.config:
+    enabled: true
+    allowedHeaders:
+      - authorization
+      - content-type
+      - x-csrf-token
+      - commerce-cart-token
+    allowedMethods:
+      - GET
+      - POST
+      - PATCH
+      - DELETE
+      - OPTIONS
+    allowedOrigins:
+      - 'http://localhost:3000'
+      - 'http://localhost:3002'
+      - 'https://localhost'
+      - 'https://manage.budhound.app'
+    exposedHeaders:
+      - commerce-cart-token
+    maxAge: 3600
+    supportsCredentials: true

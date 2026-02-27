@@ -46,6 +46,7 @@ install-*.sh
 # IDE / tool config
 .cursor/
 .claude/
+.idea/
 .tmp/
 
 # Archives and temp data
@@ -56,6 +57,13 @@ orders_response.json
 
 # Node modules (in subprojects)
 **/node_modules/
+
+# Build output
+**/dist/
+
+# Emulator screenshots
+emulator-*.png
+rare-emulator*.png
 
 # OS files
 Thumbs.db
