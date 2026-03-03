@@ -25,6 +25,10 @@ RUN curl -fsSL https://github.com/drush-ops/drush-launcher/releases/latest/downl
     -o /usr/local/bin/drush \
     && chmod +x /usr/local/bin/drush
 
+# Install all contrib modules & Drush into the image (baked in, no volume needed)
+COPY composer.json composer.lock /opt/drupal/
+RUN cd /opt/drupal && composer install --no-interaction --no-dev --optimize-autoloader
+
 # Allow .htaccess overrides for Drupal (AllowOverride None blocks Drupal routing)
 RUN sed -i 's|AllowOverride None|AllowOverride All|g' /etc/apache2/apache2.conf
 
