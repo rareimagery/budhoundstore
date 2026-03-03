@@ -17,6 +17,8 @@ parameters:
       - 'http://localhost:3000'
       - 'http://localhost:3002'
       - 'https://localhost'
+      - 'https://budhound.app'
+      - 'https://www.budhound.app'
       - 'https://manage.budhound.app'
     exposedHeaders:
       - commerce-cart-token

@@ -1,0 +1,21 @@
+# docker-compose.prod.yml — Production overrides for Hostinger VPS
+#
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+#
+# What this changes vs. local dev:
+#   - Drupal binds to 127.0.0.1 only (Nginx on the host handles public traffic)
+#   - Exposes a single internal port 8080 (instead of 8080/8081/8082)
+#   - Drupal Apache virtual hosts route by Host: header (budhound.app vs rareimagery.net)
+#   - MySQL port NOT exposed to the host (internal network only)
+#   - restart: always for automatic recovery after reboots
+
+services:
+  db:
+    restart: always
+    ports: []   # Do NOT expose MySQL to the internet
+
+  drupal:
+    restart: always
+    ports:
+      - "127.0.0.1:8080:80"  # Nginx proxies to this; not publicly accessible

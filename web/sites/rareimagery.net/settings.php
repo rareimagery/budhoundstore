@@ -37,6 +37,8 @@ $settings['trusted_host_patterns'] = [
   '^rareimagery\.local$',
   '^localhost$',
   '^10\.0\.2\.2$',
+  '^72\.62\.80\.155$',           // Hostinger VPS IP
+  '^srv1450030\.hstgr\.cloud$',  // Hostinger hostname
 ];
 
 // ── Service overrides (CORS, etc.) ────────────────────────────────────────────

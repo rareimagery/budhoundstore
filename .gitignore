@@ -1,5 +1,6 @@
 # Environment and secrets
 .env
+.mcp.json
 client_secret_*.json
 
 # Drupal (when using Composer from host)

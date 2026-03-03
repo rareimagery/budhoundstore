@@ -17,6 +17,7 @@ parameters:
       - 'http://localhost:3001'
       - 'https://localhost'
       - 'https://rareimagery.net'
+      - 'https://www.rareimagery.net'
     exposedHeaders:
       - commerce-cart-token
     maxAge: 3600
