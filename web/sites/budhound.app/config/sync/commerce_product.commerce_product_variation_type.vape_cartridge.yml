@@ -1,0 +1,10 @@
+uuid: 23f74ff9-d494-41ef-94d5-85a306b31451
+langcode: en
+status: true
+dependencies: {  }
+id: vape_cartridge
+label: 'Vape / Cartridge'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

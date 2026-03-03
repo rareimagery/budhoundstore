@@ -1,0 +1,10 @@
+uuid: 615543a3-2ea6-4e0c-b3e9-ba36478adcfa
+langcode: en
+status: true
+dependencies: {  }
+id: flower
+label: Flower
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

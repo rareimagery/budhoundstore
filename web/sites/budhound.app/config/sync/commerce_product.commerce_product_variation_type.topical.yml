@@ -1,0 +1,10 @@
+uuid: 3346f38c-f5b9-4f75-8e0a-b82660bd6c48
+langcode: en
+status: true
+dependencies: {  }
+id: topical
+label: Topical
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

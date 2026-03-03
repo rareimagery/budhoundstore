@@ -1,0 +1,12 @@
+uuid: 991201ac-6f27-4a0b-8c25-2b128b6ea2bc
+langcode: en
+status: true
+dependencies: {  }
+id: vape_cartridge
+label: 'Vape / Cartridge'
+traits: {  }
+locked: false
+description: ''
+variationTypes: {  }
+multipleVariations: false
+injectVariationFields: true

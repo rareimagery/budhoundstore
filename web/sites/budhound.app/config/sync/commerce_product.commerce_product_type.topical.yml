@@ -1,0 +1,12 @@
+uuid: 0d4b47c6-f543-49f8-b65d-477a80532894
+langcode: en
+status: true
+dependencies: {  }
+id: topical
+label: Topical
+traits: {  }
+locked: false
+description: ''
+variationTypes: {  }
+multipleVariations: false
+injectVariationFields: true

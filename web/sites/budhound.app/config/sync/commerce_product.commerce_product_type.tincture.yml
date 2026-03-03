@@ -1,0 +1,12 @@
+uuid: 7473ff80-f408-4259-b231-96568b761f3f
+langcode: en
+status: true
+dependencies: {  }
+id: tincture
+label: Tincture
+traits: {  }
+locked: false
+description: ''
+variationTypes: {  }
+multipleVariations: false
+injectVariationFields: true

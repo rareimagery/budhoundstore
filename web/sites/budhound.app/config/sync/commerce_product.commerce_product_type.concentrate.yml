@@ -1,0 +1,12 @@
+uuid: ad7e2778-5e2d-4855-86d8-cc3924d130b9
+langcode: en
+status: true
+dependencies: {  }
+id: concentrate
+label: Concentrate
+traits: {  }
+locked: false
+description: ''
+variationTypes: {  }
+multipleVariations: false
+injectVariationFields: true

@@ -1,0 +1,10 @@
+uuid: 66f029b5-7f24-4f08-945b-4797cf87e5db
+langcode: en
+status: true
+dependencies: {  }
+id: tincture
+label: Tincture
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

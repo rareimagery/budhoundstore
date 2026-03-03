@@ -1,0 +1,10 @@
+uuid: dd700e44-0616-473b-b98a-404718a55e1f
+langcode: en
+status: true
+dependencies: {  }
+id: accessory
+label: Accessory
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

@@ -1,0 +1,12 @@
+uuid: d2eca360-10c2-4e72-adf3-6a0a2c55a1c6
+langcode: en
+status: true
+dependencies: {  }
+id: pre_roll
+label: Pre-Roll
+traits: {  }
+locked: false
+description: ''
+variationTypes: {  }
+multipleVariations: false
+injectVariationFields: true

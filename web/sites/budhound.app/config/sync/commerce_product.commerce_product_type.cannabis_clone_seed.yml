@@ -1,0 +1,12 @@
+uuid: 703f5348-b962-4015-b5b4-e5ea48219d46
+langcode: en
+status: true
+dependencies: {  }
+id: cannabis_clone_seed
+label: 'Clone / Seed'
+traits: {  }
+locked: false
+description: ''
+variationTypes: {  }
+multipleVariations: false
+injectVariationFields: true

@@ -7,6 +7,9 @@ drupal/vendor/
 drupal/web/core/
 drupal/web/libraries/
 
+# Old backend directory (legacy Drupal install with vendor/, not used by Docker stack)
+backend/
+
 # Temporary build/migration scripts (executed via drush php-script)
 build-*.php
 configure-*.php

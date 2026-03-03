@@ -1,0 +1,50 @@
+uuid: 883ee7e3-f066-476c-b046-5b6757eb7fca
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - commerce_store
+    - contact
+    - file
+    - filter
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'delete own files'
+  - 'manage own commerce_payment_method'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view accessory commerce_product'
+  - 'view cannabis_clone_seed commerce_product'
+  - 'view commerce_product'
+  - 'view commerce_store'
+  - 'view concentrate commerce_product'
+  - 'view edible commerce_product'
+  - 'view flower commerce_product'
+  - 'view online commerce_store'
+  - 'view own commerce_order'
+  - 'view pre_roll commerce_product'
+  - 'view tincture commerce_product'
+  - 'view topical commerce_product'
+  - 'view vape_cartridge commerce_product'

@@ -1,0 +1,10 @@
+uuid: 76954c63-834d-46d1-b546-1428a0dc88e2
+langcode: en
+status: true
+dependencies: {  }
+id: edible
+label: Edible
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

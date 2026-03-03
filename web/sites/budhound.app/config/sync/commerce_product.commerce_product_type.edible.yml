@@ -1,0 +1,12 @@
+uuid: 8eb209ae-6e62-4d23-9e99-0a349c9e3611
+langcode: en
+status: true
+dependencies: {  }
+id: edible
+label: Edible
+traits: {  }
+locked: false
+description: ''
+variationTypes: {  }
+multipleVariations: false
+injectVariationFields: true

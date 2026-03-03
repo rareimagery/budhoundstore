@@ -1,0 +1,10 @@
+uuid: 559d2998-d940-4faa-bc71-a4e569a38e0f
+langcode: en
+status: true
+dependencies: {  }
+id: concentrate
+label: Concentrate
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

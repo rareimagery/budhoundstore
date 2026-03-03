@@ -1,0 +1,12 @@
+uuid: 314c3a19-70f9-4d56-ad39-c2f46080c6cd
+langcode: en
+status: true
+dependencies: {  }
+id: flower
+label: Flower
+traits: {  }
+locked: false
+description: ''
+variationTypes: {  }
+multipleVariations: false
+injectVariationFields: true
